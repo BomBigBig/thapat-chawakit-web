@@ -154,8 +154,8 @@ function renderProjects(category) {
         <div class="project-overlay-card">
           <h3 class="project-card_title">${title}</h3>
           <p class="project-card_desc">${desc}</p>
-          <a href="#contact" class="project-link-btn">
-            ${learnText}
+          <a href="javascript:void(0)" class="project-link-btn" onclick="openProjectModal('${p.id}')">
+            View Details ↗
           </a>
         </div>
       </article>
