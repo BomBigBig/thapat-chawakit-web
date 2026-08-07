@@ -1615,88 +1615,160 @@ button {
   color: var(--text-muted);
 }
 
-/* INTERACTIVE PROJECT MODAL POPUP */
-.modal-backdrop {
+/* FULLSCREEN PROJECT DETAIL OVERLAY */
+.fullscreen-overlay {
   position: fixed;
   inset: 0;
-  z-index: 2000;
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(8px);
+  z-index: 9999;
+  background-color: var(--bg-dark);
   display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: var(--transition-smooth);
+  flex-direction: column;
 }
 
-.modal-backdrop.open {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.modal-container {
-  background-color: var(--bg-primary);
-  width: 90%;
-  max-width: 1000px;
-  max-height: 85vh;
-  overflow-y: auto;
-  padding: 3rem;
-  position: relative;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.3);
-  transform: translateY(20px);
-  transition: var(--transition-smooth);
-}
-
-.modal-backdrop.open .modal-container {
-  transform: translateY(0);
-}
-
-.modal-close-btn {
+.fs-gallery-container {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  inset: 0;
+  cursor: e-resize; /* indicates clicking goes to next */
+}
+
+.fs-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fs-overlay-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.8) 100%);
+  pointer-events: none;
+}
+
+/* TOP NAV */
+.fs-nav-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  z-index: 10;
+  font-family: var(--font-heading);
+  letter-spacing: 0.05em;
+  font-size: 1rem;
+}
+
+.fs-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.fs-menu {
+  font-size: 0.8rem;
+  font-weight: 500;
+  word-spacing: 0.5rem;
+  display: none;
+}
+
+.fs-close-btn {
+  background: none;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.fs-close-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* CENTER LAYER */
+.fs-center-layer {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  color: #fff;
+  z-index: 10;
+}
+
+.fs-center-left, .fs-center-right {
+  font-size: 0.9rem;
+  font-family: var(--font-mono);
+  letter-spacing: 0.1em;
+}
+
+.fs-center-title {
+  font-family: var(--font-heading);
+  font-size: 4vw;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.fs-center-far-right {
   font-family: var(--font-mono);
   font-size: 0.9rem;
-  color: var(--text-muted);
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2px;
 }
 
-.modal-title {
-  font-size: 2.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.modal-specs {
+/* BOTTOM LAYER */
+.fs-bottom-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem;
   display: flex;
-  gap: 0.75rem;
-  margin-bottom: 2rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #fff;
+  z-index: 10;
 }
 
-.modal-body-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
-  margin-top: 2rem;
-}
-
-.modal-img-box img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border: 1px solid var(--border-subtle);
-}
-
-.modal-info-box h4 {
+.fs-bottom-desc {
+  max-width: 400px;
   font-size: 1.1rem;
-  margin-bottom: 0.75rem;
-  font-weight: 500;
+  line-height: 1.5;
+  font-weight: 400;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
-.modal-info-box p {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
+.fs-bottom-indicator {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+@media (min-width: 1024px) {
+  .fs-menu { display: block; }
+}
+
+@media (max-width: 768px) {
+  .fs-nav-top, .fs-center-layer, .fs-bottom-layer { padding: 1.5rem; }
+  .fs-center-layer { flex-direction: column; gap: 1rem; justify-content: center; text-align: center; }
+  .fs-center-far-right { margin-top: 2rem; }
+  .fs-center-title { font-size: 8vw; }
+  .fs-bottom-layer { flex-direction: column; gap: 1.5rem; align-items: flex-start; }
 }
 
 /* RESPONSIVE DESIGN */

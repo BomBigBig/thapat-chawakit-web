@@ -284,86 +284,78 @@ window.toggleHotspot = function(element) {
 /* --------------------------------------------------------------------------
    INTERACTIVE PROJECT MODAL (Blueprint & Specs View)
    -------------------------------------------------------------------------- */
+let currentGallery = [];
+let currentGalleryIndex = 0;
+
 function initModalEvents() {
   const backdrop = document.getElementById('project-modal');
-  const closeBtn = document.getElementById('modal-close-btn');
-
-  if (closeBtn) {
-    closeBtn.addEventListener('click', closeProjectModal);
-  }
-
-  if (backdrop) {
-    backdrop.addEventListener('click', (e) => {
-      if (e.target === backdrop) closeProjectModal();
-    });
-  }
-
+  
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeProjectModal();
+    if (e.key === 'ArrowRight') nextGalleryImage();
   });
 }
 
 window.openProjectModal = function(id) {
   activeProjectId = id;
-  const project = projectsData.find(p => p.id === id);
+  let project = null;
+  // It could be in realWorksData if it's the main feed
+  if (typeof realWorksData !== 'undefined') {
+    project = realWorksData.find(p => p.id === id);
+  }
+  // Fallback to projectsData
+  if (!project && typeof projectsData !== 'undefined') {
+    project = projectsData.find(p => p.id === id);
+  }
   if (!project) return;
 
   const modal = document.getElementById('project-modal');
-  const content = document.getElementById('modal-content-body');
-  const title = project.title[currentLang];
-  const details = project.details[currentLang];
-  const blueprintTitle = translations[currentLang].modal_blueprint_title;
-  const materialsTitle = translations[currentLang].modal_materials_title;
-
-  let galleryHtml = '';
+  
+  // Set up gallery array
   if (project.gallery && project.gallery.length > 0) {
-    galleryHtml = `
-      <div style="margin-top: 3rem;">
-        <h4 style="margin-bottom: 1.5rem;">Project Gallery</h4>
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem;">
-          ${project.gallery.map(img => `<img src="${img}" alt="Gallery image" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 4px;" loading="lazy" />`).join('')}
-        </div>
-      </div>
-    `;
+    currentGallery = project.gallery;
+  } else {
+    currentGallery = [project.image];
   }
-
-  let blueprintHtml = '';
-  if (project.blueprint) {
-    blueprintHtml = `
-        <h4 style="margin-top: 2rem;">${blueprintTitle}</h4>
-        <div class="modal-img-box">
-          <img src="${project.blueprint}" alt="Blueprint" />
-        </div>
-    `;
+  currentGalleryIndex = 0;
+  
+  // Update DOM elements
+  document.getElementById('fs-current-image').src = currentGallery[currentGalleryIndex];
+  document.getElementById('fs-project-title').textContent = project.title[currentLang];
+  
+  let subtitle = "2026";
+  if (project.specs && project.specs.length > 0) {
+    subtitle = project.specs[0];
   }
+  document.getElementById('fs-project-year').textContent = subtitle;
+  
+  let desc = project.details ? project.details[currentLang] : (project.desc ? project.desc[currentLang] : "");
+  if (desc.length > 150) desc = desc.substring(0, 150) + "...";
+  document.getElementById('fs-project-desc').textContent = desc;
 
-  content.innerHTML = `
-    <h2 class="modal-title">${title}</h2>
-    <div class="modal-specs">
-      ${(project.specs || []).map(s => `<span class="tag-badge">${s}</span>`).join('')}
-    </div>
-    
-    <div class="modal-body-grid">
-      <div class="modal-img-box">
-        <img src="${project.image}" alt="${title}" style="max-height: 80vh; width: 100%; object-fit: contain; background: #f9f9f9; padding: 1rem;" />
-      </div>
-      <div class="modal-info-box">
-        <h4>${materialsTitle}</h4>
-        <p style="white-space: pre-wrap; line-height: 1.8;">${details || ''}</p>
-        
-        ${blueprintHtml}
-      </div>
-    </div>
-    ${galleryHtml}
-  `;
-
-  modal.classList.add('open');
+  modal.style.display = 'flex';
+  // Small delay to allow CSS transition if any
+  setTimeout(() => { modal.style.opacity = 1; }, 50);
   document.body.style.overflow = 'hidden';
+};
+
+window.nextGalleryImage = function() {
+  if (currentGallery.length <= 1) return;
+  currentGalleryIndex = (currentGalleryIndex + 1) % currentGallery.length;
+  const imgElement = document.getElementById('fs-current-image');
+  
+  imgElement.style.opacity = 0;
+  setTimeout(() => {
+    imgElement.src = currentGallery[currentGalleryIndex];
+    imgElement.style.opacity = 1;
+  }, 200);
 };
 
 window.closeProjectModal = function() {
   const modal = document.getElementById('project-modal');
-  if (modal) modal.classList.remove('open');
+  if (modal) {
+    modal.style.display = 'none';
+  }
   document.body.style.overflow = 'auto';
   activeProjectId = null;
 };

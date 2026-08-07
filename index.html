@@ -382,12 +382,31 @@
   <!-- ==========================================
        INTERACTIVE PROJECT DETAIL MODAL
        ========================================== -->
-  <div id="project-modal" class="modal-backdrop">
-    <div class="modal-container">
-      <button id="modal-close-btn" class="modal-close-btn" data-i18n="modal_close">ปิดหน้าต่าง ✕</button>
-      <div id="modal-content-body">
-        <!-- Modal Content Rendered via JS -->
-      </div>
+  <div id="project-modal" class="fullscreen-overlay" style="display: none;">
+    <div id="fs-gallery-container" class="fs-gallery-container" onclick="nextGalleryImage()">
+      <img id="fs-current-image" class="fs-image" src="" alt="Project View" />
+      <div class="fs-overlay-gradient"></div>
+    </div>
+    
+    <!-- Top Nav Layer -->
+    <div class="fs-nav-top">
+      <div class="fs-brand">Thapat Chaphokit</div>
+      <div class="fs-menu">WORKS, STUDIO, PROCESS, GALLERY</div>
+      <button id="fs-close-btn" class="fs-close-btn" onclick="closeProjectModal()">CLOSE ✕</button>
+    </div>
+
+    <!-- Center Typography Layer -->
+    <div class="fs-center-layer pointer-events-none">
+      <div class="fs-center-left">FEATURED PROJECT</div>
+      <div id="fs-project-title" class="fs-center-title">PROJECT TITLE</div>
+      <div class="fs-center-right" id="fs-project-year">2026</div>
+      <div class="fs-center-far-right" style="pointer-events: auto; cursor: pointer;" onclick="nextGalleryImage()">NEXT IMAGE ➔</div>
+    </div>
+
+    <!-- Bottom Typography Layer -->
+    <div class="fs-bottom-layer pointer-events-none">
+      <div id="fs-project-desc" class="fs-bottom-desc">The style is defined by strong forms with subtle elegance.</div>
+      <div class="fs-bottom-indicator">[CLICK IMAGE TO NEXT]</div>
     </div>
   </div>
 
@@ -401,7 +420,7 @@
   </a>
 
   <!-- JavaScript Scripts -->
-  <script src="js/translations.js?v=nocache19"></script>
-  <script src="js/main.js?v=nocache19"></script>
+  <script src="js/translations.js?v=nocache20"></script>
+  <script src="js/main.js?v=nocache20"></script>
 </body>
 </html>
