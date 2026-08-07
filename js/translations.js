@@ -233,24 +233,6 @@ const realWorksData = [
       "assets/BaanSapsiri_IN/ห้องนอน 2.png"
     ],
     specs: ["Interior Design", "Modern Muji", "Phetchaburi"]
-  },
-  {
-    id: "work2",
-    image: "assets/real_work_2.png",
-    title: { th: "Bespoke Residence Concept #02", en: "Bespoke Residence Concept #02" },
-    desc: { th: "การจัดวางระนาบอาคารรับแสงธรรมชาติและสายลม", en: "Strategic architectural plane orientation for natural airflow and light." }
-  },
-  {
-    id: "work3",
-    image: "assets/real_work_3.png",
-    title: { th: "Forest Sanctuary Render #03", en: "Forest Sanctuary Render #03" },
-    desc: { th: "สถาปัตยกรรมเงียบสงบเปิดรับวิวธรรมชาติพาโนรามา", en: "Serene architectural sanctuary framing 360 panoramic nature views." }
-  },
-  {
-    id: "work4",
-    image: "assets/real_work_4.png",
-    title: { th: "Courtyard Villa Concept #04", en: "Courtyard Villa Concept #04" },
-    desc: { th: "คอร์ทยาร์ดภายในเพื่อความเป็นส่วนตัวและความสงบสูงสุด", en: "Enclosed internal courtyard designed for maximum tranquility and privacy." }
   }
 ];
 
