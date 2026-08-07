@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ถาปัตย์เฉพาะกิจ — THAPAT CHAWAKIT | Architectural Collective</title>
+  <meta name="description" content="การรวมตัวของกลุ่มสถาปนิกอิสระที่มุ่งมั่นออกแบบบ้านด้วยหัวใจ สร้างสถาปัตยกรรมระดับโลกที่เป็นเอกลักษณ์เฉพาะตัว">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css?v=nocache12">
+</head>
+<body>
+
+  <!-- ==========================================
+       NAVIGATION BAR & LANGUAGE SWITCHER
+       ========================================== -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <span class="brand-logo" data-i18n="brand_name">ถาปัตย์เฉพาะกิจ</span>
+      <span class="brand-tag" data-i18n="brand_sub">THAPAT CHAWAKIT</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#home" data-i18n="nav_home">หน้าหลัก</a></li>
+      <li><a href="#about" data-i18n="nav_about">เรื่องราวของเรา</a></li>
+      <li><a href="#process" data-i18n="nav_process">ขั้นตอนการทำงาน</a></li>
+      <li><a href="#projects" data-i18n="nav_projects">ผลงานสถาปัตยกรรม</a></li>
+      <li><a href="#team" data-i18n="nav_team">ทีมสถาปนิก</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <div class="lang-switcher">
+        <button id="lang-th" class="lang-btn active">TH</button>
+        <button id="lang-en" class="lang-btn">EN</button>
+      </div>
+      <a href="#contact" class="nav-cta" data-i18n="nav_contact">ติดต่อเรา ↗</a>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       NEW HERO BANNER FULL (Dynamic Background Photo Slider + Overlapping White Text)
+       ========================================== -->
+  <header id="home" class="hero-banner-full">
+    
+    <!-- Dynamic Full Background Photo Slider (Real Work Renders) -->
+    <div class="hero-bg-slider">
+      <div class="bg-slide active" style="background-image: url('assets/real_work_3.png');"></div>
+      <div class="bg-slide" style="background-image: url('assets/real_work_1.png');"></div>
+      <div class="bg-slide" style="background-image: url('assets/real_work_2.png');"></div>
+      <div class="bg-slide" style="background-image: url('assets/real_work_4.png');"></div>
+      <div class="bg-slider-overlay"></div>
+    </div>
+
+    <div class="hero-banner-content">
+      <!-- Left Column: Giant Statement Headline -->
+      <div class="hero-left-col">
+        <h1 class="hero-title-main" data-i18n="hero_title">
+          ห่างไกลความวุ่นวาย. ใกล้ชิดธรรมชาติ.
+        </h1>
+        <p class="hero-title-sub" data-i18n="hero_subtitle">
+          สถาปัตยกรรมบ้านเดี่ยว เพื่อชีวิตที่เงียบ สงบ และผ่อนคลาย
+        </p>
+      </div>
+
+      <!-- Right Column: Subtitle Caption -->
+      <div class="hero-right-col">
+        <p class="hero-caption-text" data-i18n="hero_carousel_caption">
+          เมื่อความห่างไกลกลายเป็นอิสระ และความเงียบสงบคือส่วนหนึ่งของชีวิตทุกๆ วัน
+        </p>
+      </div>
+    </div>
+
+    <!-- GIANT WHITE DISPLAY BRAND NAME OVERLAYING HERO IMAGE (IMAGE 2 STYLE) -->
+    <div class="giant-brand-banner-overlay">
+      <h2 class="giant-brand-text-white">THAPAT CHAWAKIT</h2>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       WORK PROCESS SECTION (DIRECTLY BELOW THAPAT CHAWAKIT - MATCHING SCREENSHOT)
+       ========================================== -->
+  <section id="about" class="section-vision">
+    <div class="vision-editorial-container">
+      
+      <!-- Magazine Style Editorial Layout -->
+      <div class="vision-statement-editorial layout-magazine">
+        <div class="magazine-label" data-i18n="vision_explore">• ปรัชญาและแก่นแท้การออกแบบ</div>
+        <p class="editorial-text">
+          <strong class="magazine-title" data-i18n="vision_title">วิสัยทัศน์สถาปัตยกรรมเพื่อการอยู่อาศัย</strong><br>
+          <span data-i18n="vision_editorial_statement">
+            <span class="text-bold">สถาปัตยกรรมแห่งชีวิต</span> คือการสร้างสเปซที่ตอบสนองความสงบในจิตใจ 
+            <span class="text-bold">เราช่วยคุณสร้างบ้านที่ห่างไกลจากความวุ่นวาย</span> 
+            <span class="text-muted-flow">มุ่งเน้นการเปิดรับแสงธรรมชาติ สายลม และการเชื่อมโยงกับบริบทแวดล้อมอย่างลึกซึ้ง ปราศจากแบบพิมพ์นิยมของบริษัทใหญ่ เพื่อให้ทุกตารางเมตรทรงคุณค่าและเป็นตัวตนของคุณอย่างแท้จริง</span>
+          </span>
+        </p>
+      </div>
+
+      <!-- 3 Frameless Architectural Pillars (Dynamic i18n) -->
+      <div class="vision-frameless-pillars">
+        
+        <!-- Pillar 01 -->
+        <div class="frameless-pillar-item">
+          <span class="pillar-num-inline">01.</span>
+          <h3 class="pillar-title-clean" data-i18n="vision_pillar1_title">แก่นแท้ของการอยู่อาศัย</h3>
+          <p class="pillar-desc-clean" data-i18n="vision_pillar1_desc">
+            <span class="text-dark">สถาปัตยกรรมไม่ใช่เพียงแค่โครงสร้างคอนกรีต</span> 
+            <span class="text-sub">แต่คือการสร้างสเปซที่ตอบสนองความสงบในจิตใจ มุ่งเน้นความโปร่งสบาย แสงธรรมชาติ และสายลม เพื่อให้บ้านเป็นพื้นที่ปลอดภัยสูงสุดของชีวิต</span>
+          </p>
+        </div>
+
+        <!-- Pillar 02 -->
+        <div class="frameless-pillar-item">
+          <span class="pillar-num-inline">02.</span>
+          <h3 class="pillar-title-clean" data-i18n="vision_pillar2_title">หลีกหนีความวุ่นวาย เชื่อมโยงธรรมชาติ</h3>
+          <p class="pillar-desc-clean" data-i18n="vision_pillar2_desc">
+            <span class="text-dark">เราถอยห่างจากความวุ่นวายในเมืองใหญ่</span> 
+            <span class="text-sub">จัดวางทิศทางอาคารให้สอดคล้องกับธรรมชาติในพื้นที่ เพื่อให้ทุกจังหวะชีวิตรู้สึกได้ถึงความสงบ ชัดเจน และการเชื่อมโยงอย่างลึกซึ้ง</span>
+          </p>
+        </div>
+
+        <!-- Pillar 03 -->
+        <div class="frameless-pillar-item">
+          <span class="pillar-num-inline">03.</span>
+          <h3 class="pillar-title-clean" data-i18n="vision_pillar3_title">สถาปัตยกรรมเพื่อมนุษย์แบบเฉพาะตัว</h3>
+          <p class="pillar-desc-clean" data-i18n="vision_pillar3_desc">
+            <span class="text-dark">บ้านทุกหลังถูกสร้างสรรค์เพื่อคุณคนเดียว</span> 
+            <span class="text-sub">ปราศจากแบบพิมพ์นิยมของบริษัทใหญ่ เราทุ่มเทออกแบบอย่างประณีตในทุกรายละเอียด เพื่อให้ทุกสเปซเป็นตัวตนของคุณอย่างแท้จริง</span>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       OUR VISION OF BESPOKE LIVING (Frameless Editorial Typography - Dynamic i18n)
+       ========================================== -->
+  <section id="process" class="section-process">
+    <div class="process-header">
+      <div class="section-index" data-i18n="section_process_num">[PROCESS]</div>
+      <h2 class="process-title" data-i18n="section_process_title">ขั้นตอนการทำงานของเรา (จากความฝัน สู่บ้านจริง)</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;" data-i18n="section_process_sub">
+        กระบวนการออกแบบและใส่ใจทุกรายละเอียดตั้งแต่จุดเริ่มต้นจนถึงวันที่ส่งมอบบ้านจริง
+      </p>
+    </div>
+
+    <div class="process-grid">
+      
+      <!-- Left Column: Full-Height 6-Step Auto-Crossfade Image Container -->
+      <div class="process-left-col">
+        <div class="process-img-slider-container">
+          <div class="process-step-slide active" data-step="1">
+            <img src="assets/process_step_1.jpg" alt="Step 1: Site Inspection Chiang Mai" class="process-step-img" />
+            <div class="process-step-overlay">
+              <span class="process-img-badge">[ STEP 01 // CONSULTATION & SITE VISIT ]</span>
+            </div>
+          </div>
+          <div class="process-step-slide" data-step="2">
+            <img src="assets/process_step_2.jpg" alt="Step 2: Schematic Design" class="process-step-img" />
+            <div class="process-step-overlay">
+              <span class="process-img-badge">[ STEP 02 // CONCEPTUAL & SCHEMATIC DESIGN ]</span>
+            </div>
+          </div>
+          <div class="process-step-slide" data-step="3">
+            <img src="assets/process_step_3.jpg" alt="Step 3: 3D Perspective Renders" class="process-step-img" />
+            <div class="process-step-overlay">
+              <span class="process-img-badge">[ STEP 03 // DESIGN DEVELOPMENT & 3D RENDERS ]</span>
+            </div>
+          </div>
+          <div class="process-step-slide" data-step="4">
+            <img src="assets/process_step_4.jpg" alt="Step 4: Blueprints & BOQ" class="process-step-img" />
+            <div class="process-step-overlay">
+              <span class="process-img-badge">[ STEP 04 // CONSTRUCTION DOCUMENTS & BOQ ]</span>
+            </div>
+          </div>
+          <div class="process-step-slide" data-step="5">
+            <img src="assets/process_step_5.jpg" alt="Step 5: Building Permits Application" class="process-step-img" />
+            <div class="process-step-overlay">
+              <span class="process-img-badge">[ STEP 05 // BUILDING PERMITS APPLICATION ]</span>
+            </div>
+          </div>
+          <div class="process-step-slide" data-step="6">
+            <img src="assets/process_step_6.jpg" alt="Step 6: Construction Site Inspection" class="process-step-img" />
+            <div class="process-step-overlay">
+              <span class="process-img-badge">[ STEP 06 // BIDDING & CONSTRUCTION OBSERVATION ]</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Awwwards Open Timeline Rows -->
+      <div class="process-right-col">
+        
+        <!-- Step 1 -->
+        <div class="process-step-card active-step" data-step-index="0">
+          <span class="step-number-badge">01.</span>
+          <div class="step-card-content">
+            <h3 class="step-card-title" data-i18n="step1_title">ขั้นที่ 1: พูดคุยทำความรู้จัก และลงพื้นที่จริง (Consultation & Site Visit)</h3>
+            <p class="step-card-desc" data-i18n="step1_do">ทำอะไร: นัดพูดคุยเพื่อรับฟังความต้องการ (Brief) ไลฟ์สไตล์ สมาชิกในครอบครัว และงบประมาณที่คุณตั้งไว้</p>
+            <div class="step-card-highlight" data-i18n="step1_care">
+              ความใส่ใจพิเศษ: ผมจะลงพื้นที่ไปดูที่ดินจริงของคุณในเชียงใหม่ เพื่อดูทิศทางลม แดด วิวรอบข้าง และบริบทของชุมชน เพื่อนำมาออกแบบบ้านให้เหมาะกับที่ดินแปลงนี้ที่สุด
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-step-card" data-step-index="1">
+          <span class="step-number-badge">02.</span>
+          <div class="step-card-content">
+            <h3 class="step-card-title" data-i18n="step2_title">ขั้นที่ 2: วางแนวคิดและออกแบบร่างเบื้องต้น (Conceptual & Schematic Design)</h3>
+            <p class="step-card-desc" data-i18n="step2_do">ทำอะไร: นำข้อมูลทั้งหมดมาวิเคราะห์ และจัดทำเป็น "แบบร่างเบื้องต้น" (ผังพื้นห้องต่างๆ) พร้อมนำเสนอสไตล์บ้าน (Mood & Tone)</p>
+            <div class="step-card-highlight" data-i18n="step2_goal">
+              เป้าหมาย: เพื่อให้เราเห็นภาพตรงกันว่า การจัดวางฟังก์ชันใช้งานและหน้าตาบ้านไปในทิศทางที่คุณชอบหรือไม่ (ขั้นตอนนี้สามารถปรับแก้ได้จนกว่าจะลงตัว)
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-step-card" data-step-index="2">
+          <span class="step-number-badge">03.</span>
+          <div class="step-card-content">
+            <h3 class="step-card-title" data-i18n="step3_title">ขั้นที่ 3: พัฒนาแบบและจัดทำภาพ 3 มิติ (Design Development & 3D)</h3>
+            <p class="step-card-desc" data-i18n="step3_do">ทำอะไร: เมื่อผังพื้นลงตัวแล้ว ผมจะพัฒนาแบบให้เป็นภาพ 3 มิติ (3D Perspective) ทั้งภายนอกและภายใน (เบื้องต้น)</p>
+            <div class="step-card-highlight" data-i18n="step3_goal">
+              เป้าหมาย: ให้คุณได้เห็นหน้าตาบ้านเสมือนจริงก่อนลงมือก่อสร้าง วัสดุที่จะใช้ สีสันต่างๆ เพื่อให้มั่นใจว่านี่คือบ้านในฝันของคุณจริงๆ
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-step-card" data-step-index="3">
+          <span class="step-number-badge">04.</span>
+          <div class="step-card-content">
+            <h3 class="step-card-title" data-i18n="step4_title">ขั้นที่ 4: จัดทำแบบก่อสร้างและราคากลาง (Construction Documents & BOQ)</h3>
+            <p class="step-card-desc" data-i18n="step4_do">ทำอะไร: นำแบบที่สรุปแล้วมาเขียนเป็น "แบบก่อสร้างที่สมบูรณ์" (พิมพ์เขียว) ที่ระบุรายละเอียดสถาปัตยกรรมและวิศวกรรมครบถ้วน พร้อมกับทำ "ใบประเมินราคากลาง (BOQ)"</p>
+            <div class="step-card-highlight" data-i18n="step4_goal">
+              เป้าหมาย: ช่างจะได้มีแบบที่ชัดเจนในการทำงาน ลดข้อผิดพลาดหน้างาน และคุณสามารถใช้ BOQ เพื่อคุมงบประมาณ ใช้เปรียบเทียบราคาผู้รับเหมา หรือใช้ยื่นกู้ธนาคารได้
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="process-step-card" data-step-index="4">
+          <span class="step-number-badge">05.</span>
+          <div class="step-card-content">
+            <h3 class="step-card-title" data-i18n="step5_title">ขั้นที่ 5: จัดเตรียมเอกสารยื่นขออนุญาตก่อสร้าง (Permits Application)</h3>
+            <p class="step-card-desc" data-i18n="step5_do">ทำอะไร: ผมจะช่วยดูแลจัดทำเอกสารและแบบฟอร์มต่างๆ ที่จำเป็นสำหรับการยื่นขออนุญาตก่อสร้างกับทางเทศบาลหรือ อบต. ในพื้นที่</p>
+            <div class="step-card-highlight" data-i18n="step5_goal">
+              เป้าหมาย: เพื่อให้คุณได้แบบบ้านที่ถูกต้องตามกฎหมายควบคุมอาคารและระยะร่นต่างๆ สบายใจหายห่วง
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="process-step-card" data-step-index="5">
+          <span class="step-number-badge">06.</span>
+          <div class="step-card-content">
+            <h3 class="step-card-title" data-i18n="step6_title">ขั้นที่ 6: คัดเลือกผู้รับเหมาและให้คำปรึกษาระหว่างก่อสร้าง (Bidding & Construction Observation)</h3>
+            <p class="step-card-desc" data-i18n="step6_do">ทำอะไร: ให้คำแนะนำในการเลือกผู้รับเหมา และลงพื้นที่ไปดูหน้างานเป็นระยะๆ (ตามที่ตกลงกัน)</p>
+            <div class="step-card-highlight" data-i18n="step6_goal">
+              เป้าหมาย: เพื่อตรวจสอบว่าช่างทำงานได้ตรงตามแบบและสัดส่วนที่ออกแบบไว้หรือไม่ พร้อมช่วยแก้ปัญหาหน้างานหากมีเหตุสุดวิสัย จนกว่าบ้านจะสร้างเสร็จสมบูรณ์
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION [02] - INAUGURAL BESPOKE PROJECTS (Artistic Dashed Canvas)
+       ========================================== -->
+  <section id="projects" class="section-portfolio">
+    <div class="section-index" data-i18n="section_02_num">[02]</div>
+
+    <div class="inaugural-project-card">
+      
+      <!-- Left Column: Artistic Dashed Empty Blueprint Canvas (Replacing Photo) -->
+      <div class="inaugural-dashed-box">
+        <div class="dashed-grid-bg"></div>
+        <div class="artistic-dashed-content">
+          <div class="artistic-crosshair">+ &nbsp; + &nbsp; +</div>
+          <h3 class="artistic-empty-title" data-i18n="section_02_title">ร่วมเป็นส่วนหนึ่งในผลงานแรกของพวกเรา</h3>
+          <span class="artistic-empty-badge" data-i18n="inaugural_empty_badge">
+            [ INAUGURAL CANVAS // ผืนผ้าใบที่เปิดกว้างสำหรับบ้านในฝันของคุณ ]
+          </span>
+        </div>
+      </div>
+
+      <!-- Right Column: Inaugural Manifesto Content -->
+      <div class="inaugural-content">
+        <h2 class="inaugural-title" data-i18n="section_02_title">ร่วมเป็นส่วนหนึ่งในผลงานแรกของพวกเรา</h2>
+        <p class="inaugural-sub" data-i18n="section_02_sub">
+          เปิดผืนผ้าใบสถาปัตยกรรมร่วมกับ ถาปัตย์เฉพาะกิจ เพื่อรังสรรค์บ้านหลังแรกที่เป็นผลงานชิ้นเอกชิ้นแรกของกลุ่มพวกเรา
+        </p>
+
+        <div class="inaugural-box">
+          <h3 class="inaugural-box-head" data-i18n="cta_first_client_title">ร่วมสร้างสรรค์สถาปัตยกรรมที่เป็นเอกลักษณ์ร่วมกัน</h3>
+          <p class="inaugural-box-desc" data-i18n="cta_first_client_desc">
+            หากคุณกำลังมองหาทีมสถาปนิกที่พร้อมทุ่มเทเวลา หัวใจ และความพิถีพิถันให้แก่บ้านของคุณอย่างเต็มร้อย เราพร้อมเปิดผืนผ้าใบและออกแบบร่วมกับคุณตั้งแต่วันนี้
+          </p>
+          <a href="#contact" class="project-link-btn" style="margin-top: 1.5rem;" data-i18n="cta_start_project">
+            ส่งโจทย์เริ่มออกแบบบ้านหลังแรก ↗
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION [03] - ARCHITECT COLLECTIVE TEAM (Split Layout)
+       ========================================== -->
+  <section id="team" class="section-team">
+    <div class="section-index" data-i18n="section_03_num">[03]</div>
+    <h2 class="portfolio-title" data-i18n="section_03_title">ทีมสถาปนิกเฉพาะกิจ</h2>
+    <p style="color: var(--text-muted); margin-top: 0.5rem;" data-i18n="section_03_sub">
+      การรวมตัวของนักออกแบบผู้ไร้กรอบสังกัด มุ่งเน้นการสร้างบ้านที่เป็นเอกลักษณ์เฉพาะตัว
+    </p>
+
+    <!-- Interactive Team Container with Full Image & Hotspot Popups -->
+    <div id="team-container">
+      <!-- Dynamic Rendered via JS -->
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION [04] - CONTACT & INQUIRY FORM
+       ========================================== -->
+  <section id="contact" class="section-contact">
+    <div class="section-index" data-i18n="section_04_num">[04]</div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div>
+          <h3 style="font-size: 1.5rem; font-weight: 500;" data-i18n="brand_name">ถาปัตย์เฉพาะกิจ</h3>
+          <p style="color: var(--text-muted); font-size: 0.85rem;" data-i18n="brand_sub">ARCHITECTURAL COLLECTIVE</p>
+
+          <ul class="contact-nav-list">
+            <li><a href="#home" data-i18n="nav_home">หน้าหลัก</a></li>
+            <li><a href="#process" data-i18n="nav_process">ขั้นตอนการทำงาน</a></li>
+            <li><a href="#about" data-i18n="nav_about">เรื่องราวของเรา</a></li>
+            <li><a href="#projects" data-i18n="nav_projects">ผลงานสถาปัตยกรรม</a></li>
+            <li><a href="#team" data-i18n="nav_team">ทีมสถาปนิก</a></li>
+          </ul>
+        </div>
+
+        <div class="contact-direct">
+          <a href="mailto:saanstudio.contact@gmail.com" class="contact-email">saanstudio.contact@gmail.com</a>
+          <span class="contact-phone-bottom">091-131-7205</span>
+          <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 1rem;" data-i18n="footer_copyright">
+            © 2026 ถาปัตย์เฉพาะกิจ. ออกแบบเพื่อให้ชีวิตเป็นหนึ่งเดียวกับธรรมชาติ.
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <h2 class="form-title" data-i18n="section_04_title">
+          มีข้อสงสัยหรืออยากเริ่มต้นออกแบบบ้านกับเรา?
+        </h2>
+        <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="section_04_sub">
+          ส่งโจทย์หรือแนวคิดบ้านที่คุณฝันไว้ ทีมสถาปนิกเฉพาะกิจจะติดต่อกลับเพื่อพูดคุยรายละเอียดโดยเร็วที่สุด
+        </p>
+
+        <form id="inquiry-form" class="form-grid" action="https://formsubmit.co/saanstudio.contact@gmail.com" method="POST">
+          <!-- FormSubmit Configuration -->
+          <input type="hidden" name="_subject" value="🎉 New Inquiry from Thapat Chawakit Website!">
+          <input type="hidden" name="_captcha" value="false">
+          
+          <div>
+            <input type="text" name="First Name" class="form-input" placeholder="ชื่อจริง*" required data-i18n-placeholder="form_fname" />
+          </div>
+          <div>
+            <input type="text" name="Last Name" class="form-input" placeholder="นามสกุล*" required data-i18n-placeholder="form_lname" />
+          </div>
+          <div>
+            <input type="email" name="Email" class="form-input" placeholder="อีเมล*" required data-i18n-placeholder="form_email" />
+          </div>
+          <div>
+            <input type="tel" name="Phone Number" class="form-input" placeholder="เบอร์โทรศัพท์*" required data-i18n-placeholder="form_phone" />
+          </div>
+          <div class="form-field-full">
+            <textarea name="Message" rows="3" class="form-input" placeholder="รายละเอียดงบประมาณ หรือแนวคิดบ้านที่ต้องการ*" required data-i18n-placeholder="form_message"></textarea>
+          </div>
+
+          <div class="form-field-full form-submit-row">
+            <button type="submit" class="btn-send" data-i18n="form_send">ส่งข้อมูล ↗</button>
+            <span class="form-disclaimer" data-i18n="form_disclaimer">
+              โดยการกดส่งข้อมูล คุณยินยอมให้เราติดต่อกลับเพื่อเสนอคำปรึกษาด้านสถาปัตยกรรม
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       INTERACTIVE PROJECT DETAIL MODAL
+       ========================================== -->
+  <div id="project-modal" class="modal-backdrop">
+    <div class="modal-container">
+      <button id="modal-close-btn" class="modal-close-btn" data-i18n="modal_close">ปิดหน้าต่าง ✕</button>
+      <div id="modal-content-body">
+        <!-- Modal Content Rendered via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       FLOATING CONTACT BUTTON
+       ========================================== -->
+  <a href="#contact" class="floating-contact-btn" aria-label="Contact Us">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+    </svg>
+  </a>
+
+  <!-- JavaScript Scripts -->
+  <script src="js/translations.js?v=nocache13"></script>
+  <script src="js/main.js?v=nocache13"></script>
+</body>
+</html>
