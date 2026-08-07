@@ -1,7 +1,7 @@
 const translations = {
   th: {
-    brand_name: "ถาปัตย์เฉพาะกิจ",
-    brand_sub: "THAPAT CHAWAKIT",
+    brand_name: "ถาปัตเฉพาะกิจ",
+    brand_sub: "THAPAT CHAPHOKIT",
     nav_home: "หน้าหลัก",
     nav_process: "ขั้นตอนการทำงาน",
     nav_about: "เรื่องราวของเรา",
@@ -14,12 +14,12 @@ const translations = {
     hero_carousel_caption: "เมื่อความห่างไกลกลายเป็นอิสระ และความเงียบสงบคือส่วนหนึ่งของชีวิตทุกๆ วัน",
     
     statement_title: "เราช่วยคุณสร้างพื้นที่ชีวิตที่สงบ ผ่อนคลาย และห่างไกลจากความวุ่นวายอย่างแท้จริง",
-    statement_sub: "ถาปัตย์เฉพาะกิจ — Beyond the City",
+    statement_sub: "ถาปัตเฉพาะกิจ — Beyond the City",
     statement_phone: "091-131-7205",
     
     vision_title: "วิสัยทัศน์สถาปัตยกรรมเพื่อการอยู่อาศัย",
-    vision_explore: "• ปรัชญาและแก่นแท้การออกแบบของ ถาปัตย์เฉพาะกิจ",
-    vision_editorial_statement: '<span class="text-bold">"บ้านที่ดี ไม่จำเป็นต้องเหมือนบ้านใคร... แต่ต้องเป็นบ้านที่สร้างมาแล้ว \'พอดี\' กับการใช้ชีวิตและตัวตนของคุณที่สุด"</span> <span class="text-muted-flow">นั่นคือปรัชญาหลักในการทำงานของเรา ถาปัตย์เฉพาะกิจมุ่งเน้นการออกแบบที่จริงใจ เข้าใจวิถีชีวิตของคุณอย่างลึกซึ้ง เพื่อสร้างสเปซที่เป็นเอกลักษณ์และเกิดมาเพื่อคุณคนเดียว</span>',
+    vision_explore: "• ปรัชญาและแก่นแท้การออกแบบของ ถาปัตเฉพาะกิจ",
+    vision_editorial_statement: '<span class="text-bold">"บ้านที่ดี ไม่จำเป็นต้องเหมือนบ้านใคร... แต่ต้องเป็นบ้านที่สร้างมาแล้ว \'พอดี\' กับการใช้ชีวิตและตัวตนของคุณที่สุด"</span> <span class="text-muted-flow">นั่นคือปรัชญาหลักในการทำงานของเรา ถาปัตเฉพาะกิจมุ่งเน้นการออกแบบที่จริงใจ เข้าใจวิถีชีวิตของคุณอย่างลึกซึ้ง เพื่อสร้างสเปซที่เป็นเอกลักษณ์และเกิดมาเพื่อคุณคนเดียว</span>',
     
     vision_pillar1_title: "จุดเริ่มต้นคือ 'ตัวคุณ'",
     vision_pillar1_desc: '<span class="text-dark">เราเชื่อว่าบ้านที่ดีที่สุดเริ่มต้นจากเจ้าของบ้าน</span> <span class="text-sub">สถาปนิกของเราพร้อมรับฟังทุกความต้องการและวิถีชีวิตของคุณ เพื่อแปลความหมายออกมาเป็นพื้นที่ที่ตอบสนองการใช้ชีวิตได้อย่างแท้จริงและพอดีที่สุด</span>',
@@ -32,13 +32,13 @@ const translations = {
     
     section_01_num: "[01]",
     section_01_title: "เปลี่ยนความคิดเรื่องบ้าน ให้กลายเป็นสถาปัตยกรรมแห่งชีวิต",
-    section_01_desc1: "ทุกสถาปัตยกรรมที่ยิ่งใหญ่เริ่มต้นจากวิสัยทัศน์ — ประกายความคิดสร้างสรรค์ที่ก่อตัวขึ้นผ่านการวางแผนอันประณีตและการออกแบบอย่างพิถีพิถัน ถาปัตย์เฉพาะกิจ เกิดจากการรวมตัวของ 3 สถาปนิกอิสระที่หลงใหลการออกแบบบ้านอย่างสุดหัวใจ",
+    section_01_desc1: "ทุกสถาปัตยกรรมที่ยิ่งใหญ่เริ่มต้นจากวิสัยทัศน์ — ประกายความคิดสร้างสรรค์ที่ก่อตัวขึ้นผ่านการวางแผนอันประณีตและการออกแบบอย่างพิถีพิถัน ถาปัตเฉพาะกิจ เกิดจากการรวมตัวของ 3 สถาปนิกอิสระที่หลงใหลการออกแบบบ้านอย่างสุดหัวใจ",
     section_01_desc2: "เราพร้อมทุ่มเทเวลาและตั้งใจออกแบบบ้านทุกหลังร่วมกับคุณ เพื่อให้บ้านเป็นพื้นที่แห่งความสงบสุขและทรงคุณค่าสูงสุดแก่ชีวิต",
     manifesto_authenticity: "การรวมพลังของ 3 สถาปนิกอิสระ | มุ่งเน้นการออกแบบบ้านทีละหลังด้วยความประณีตสูงสุด",
     
     section_02_num: "[02] — ผลงาน",
     section_02_title: "ร่วมเป็นส่วนหนึ่งในผลงานแรกของพวกเรา",
-    section_02_sub: "เปิดผืนผ้าใบสถาปัตยกรรมร่วมกับ ถาปัตย์เฉพาะกิจ เพื่อรังสรรค์บ้านหลังแรกที่เป็นผลงานชิ้นเอกชิ้นแรกของกลุ่มพวกเรา",
+    section_02_sub: "เปิดผืนผ้าใบสถาปัตยกรรมร่วมกับ ถาปัตเฉพาะกิจ เพื่อรังสรรค์บ้านหลังแรกที่เป็นผลงานชิ้นเอกชิ้นแรกของกลุ่มพวกเรา",
     inaugural_empty_badge: "[ INAUGURAL CANVAS // ผืนผ้าใบที่เปิดกว้างสำหรับบ้านในฝันของคุณ ]",
     cta_first_client_title: "ร่วมสร้างสรรค์สถาปัตยกรรมที่เป็นเอกลักษณ์ร่วมกัน",
     cta_first_client_desc: "หากคุณกำลังมองหาทีมสถาปนิกที่พร้อมทุ่มเทเวลา หัวใจ และความพิถีพิถันให้แก่บ้านของคุณอย่างเต็มร้อย เราพร้อมเปิดผืนผ้าใบและออกแบบร่วมกับคุณตั้งแต่วันนี้",
@@ -70,9 +70,9 @@ const translations = {
     section_03_title: "ทีมสถาปนิกเฉพาะกิจ",
     section_03_sub: "การรวมตัวของนักออกแบบผู้ไร้กรอบสังกัด มุ่งเน้นการสร้างบ้านที่เป็นเอกลักษณ์เฉพาะตัว",
     team_story_tag: "ความเป็นมาของพวกเรา",
-    team_story_title: "จุดเริ่มต้นการรวมตัวของ ถาปัตย์เฉพาะกิจ",
+    team_story_title: "จุดเริ่มต้นการรวมตัวของ ถาปัตเฉพาะกิจ",
     team_story_sub: "จาก 3 สถาปนิกอิสระ สู่การสร้างสรรค์สถาปัตยกรรมแห่งชีวิต",
-    team_story_p1: "ถาปัตย์เฉพาะกิจ ก่อตั้งขึ้นจากการโคจรมาเจอกันของ คุณธนภัทร (บอม), คุณจักรกฤษณ์ (ต้นกล้า) และ คุณณัฐวิชช์ (ต้า) — 3 สถาปนิกอิสระที่มีอุดมการณ์เดียวกัน เราต่างเชื่อว่าบ้านที่ดีที่สุด ไม่ใช่แบบพิมพ์นิยมจากบริษัทใหญ่ แต่คือบ้านที่ถูกสร้างสรรค์ขึ้นมาจากความเข้าใจในตัวตนของเจ้าของบ้านและบริบทธรรมชาติอย่างแท้จริง",
+    team_story_p1: "ถาปัตเฉพาะกิจ ก่อตั้งขึ้นจากการโคจรมาเจอกันของ คุณธนภัทร (บอม), คุณจักรกฤษณ์ (ต้นกล้า) และ คุณณัฐวิชช์ (ต้า) — 3 สถาปนิกอิสระที่มีอุดมการณ์เดียวกัน เราต่างเชื่อว่าบ้านที่ดีที่สุด ไม่ใช่แบบพิมพ์นิยมจากบริษัทใหญ่ แต่คือบ้านที่ถูกสร้างสรรค์ขึ้นมาจากความเข้าใจในตัวตนของเจ้าของบ้านและบริบทธรรมชาติอย่างแท้จริง",
     team_story_p2: "เราจึงผนึกความเชี่ยวชาญเฉพาะทาง ทั้งการวางโครงสร้างคอนกรีตมินิมอล การจัดวางสเปซ Biophilic และจังหวะแสงเงาทางสถาปัตยกรรม เพื่อส่งมอบพื้นที่ชีวิตที่เป็นเอกลักษณ์เฉพาะตัวสูงสุดแก่ผู้อยู่อาศัย",
     val_1_title: "อิสระแห่งการออกแบบ",
     val_1_desc: "ไร้กรอบบริษัทเดิมๆ มุ่งเน้นโจทย์ชีวิตของเจ้าของบ้านเป็นศูนย์กลาง",
@@ -90,14 +90,14 @@ const translations = {
     form_send: "ส่งข้อมูล ↗",
     form_disclaimer: "โดยการกดส่งข้อมูล คุณยินยอมให้เราติดต่อกลับเพื่อเสนอคำปรึกษาด้านสถาปัตยกรรม",
     
-    footer_copyright: "© 2026 ถาปัตย์เฉพาะกิจ. ออกแบบเพื่อให้ชีวิตเป็นหนึ่งเดียวกับธรรมชาติ.",
+    footer_copyright: "© 2026 ถาปัตเฉพาะกิจ. ออกแบบเพื่อให้ชีวิตเป็นหนึ่งเดียวกับธรรมชาติ.",
     
     modal_blueprint_title: "แบบแปลนสถาปัตยกรรม (Architectural Blueprint)",
     modal_materials_title: "วัสดุและนวัตกรรมการก่อสร้าง",
     modal_close: "ปิดหน้าต่าง ✕"
   },
   en: {
-    brand_name: "THAPAT CHAWAKIT",
+    brand_name: "THAPAT CHAPHOKIT",
     brand_sub: "ARCHITECTURAL COLLECTIVE",
     nav_home: "HOME",
     nav_process: "WORK PROCESS",
@@ -111,7 +111,7 @@ const translations = {
     hero_carousel_caption: "Where distance feels like freedom and silence becomes your everyday.",
     
     statement_title: "WE HELP YOU FIND YOUR PLACE FOR A CALM, COMFORTABLE LIFE AWAY FROM THE CONSTANT NOISE.",
-    statement_sub: "Thapat Chawakit — Beyond the City",
+    statement_sub: "Thapat Chaphokit — Beyond the City",
     statement_phone: "091-131-7205",
     
     vision_title: "OUR VISION OF BESPOKE LIVING",
@@ -129,13 +129,13 @@ const translations = {
     
     section_01_num: "[01]",
     section_01_title: "Where ideas become landmarks",
-    section_01_desc1: "Every great structure begins as a vision — a spark of creativity that takes shape through thoughtful design and precise execution. Thapat Chawakit is a collective of 3 independent architects bound by a shared devotion to human-centric home design.",
+    section_01_desc1: "Every great structure begins as a vision — a spark of creativity that takes shape through thoughtful design and precise execution. Thapat Chaphokit is a collective of 3 independent architects bound by a shared devotion to human-centric home design.",
     section_01_desc2: "We dedicate our time and heart to designing each home intimately alongside you, ensuring your space becomes an enduring sanctuary.",
     manifesto_authenticity: "Collective of 3 Independent Architects | Crafting One Unique Home at a Time",
     
     section_02_num: "[02] — PROJECTS",
     section_02_title: "BE PART OF OUR INAUGURAL ARCHITECTURAL PIECE",
-    section_02_sub: "Partner with Thapat Chawakit to open our canvas and craft a bespoke landmark home as our collective's premier architectural creation.",
+    section_02_sub: "Partner with Thapat Chaphokit to open our canvas and craft a bespoke landmark home as our collective's premier architectural creation.",
     inaugural_empty_badge: "[ INAUGURAL CANVAS // RESERVED FOR YOUR DREAM HOME ]",
     cta_first_client_title: "CRAFT A BESPOKE LANDMARK HOME TOGETHER",
     cta_first_client_desc: "If you are seeking an architectural collective ready to dedicate 100% of their heart, time, and craftsmanship to your dream home, we are ready to open our canvas with you today.",
@@ -167,9 +167,9 @@ const translations = {
     section_03_title: "The Architectural Collective",
     section_03_sub: "Independent visionaries pouring their heart into crafting bespoke human sanctuaries.",
     team_story_tag: "OUR ORIGIN STORY",
-    team_story_title: "The Story Behind Thapat Chawakit",
+    team_story_title: "The Story Behind Thapat Chaphokit",
     team_story_sub: "How Three Visionary Architects United Under One Collective",
-    team_story_p1: "Thapat Chawakit was born from the meeting of minds between Mr. Thanapat (Bom), Mr. Jakkrit (Tonkla), and Mr. Nattawit (TA) — three independent architects bound by a conviction that true architecture should elevate human living beyond rigid corporate templates.",
+    team_story_p1: "Thapat Chaphokit was born from the meeting of minds between Mr. Thanapat (Bom), Mr. Jakkrit (Tonkla), and Mr. Nattawit (TA) — three independent architects bound by a conviction that true architecture should elevate human living beyond rigid corporate templates.",
     team_story_p2: "Combining our specialized mastery in brutalist concrete structures, biophilic spatial flow, and architectural lighting, we formed this collective to craft bespoke sanctuaries tailored intimately to each homeowner's soul.",
     val_1_title: "Design Freedom",
     val_1_desc: "Unbound by corporate red tape, focusing purely on client-centric vision.",
@@ -177,7 +177,7 @@ const translations = {
     val_2_desc: "Meticulously balancing natural lighting, airflow, and absolute privacy.",
     
     section_04_num: "[04] — CONTACT",
-    section_04_title: "Have questions or want to learn more about Thapat Chawakit?",
+    section_04_title: "Have questions or want to learn more about Thapat Chaphokit?",
     section_04_sub: "We will get back to you with available options, details, and next steps.",
     form_fname: "First name*",
     form_lname: "Last name*",
@@ -187,7 +187,7 @@ const translations = {
     form_send: "Send ↗",
     form_disclaimer: "By clicking \"Send\", you agree to the processing of your personal data.",
     
-    footer_copyright: "© 2026 Thapat Chawakit. Designed to live with nature.",
+    footer_copyright: "© 2026 Thapat Chaphokit. Designed to live with nature.",
     
     modal_blueprint_title: "Architectural Blueprint & Floor Plan",
     modal_materials_title: "Materials & Structural Engineering",
@@ -251,8 +251,8 @@ const teamData = [
       en: "Founder & Principal Architect (Center)" 
     },
     exp: { 
-      th: "ผู้ก่อตั้ง ถาปัตย์เฉพาะกิจ เชี่ยวชาญการวางปรัชญาสถาปัตยกรรมมินิมอล โครงสร้างคอนกรีตเปลือย และการอยู่อาศัยยั่งยืน", 
-      en: "Founder of Thapat Chawakit. Specialist in brutalist minimalist philosophy, raw concrete structures, and sustainable living." 
+      th: "ผู้ก่อตั้ง ถาปัตเฉพาะกิจ เชี่ยวชาญการวางปรัชญาสถาปัตยกรรมมินิมอล โครงสร้างคอนกรีตเปลือย และการอยู่อาศัยยั่งยืน", 
+      en: "Founder of Thapat Chaphokit. Specialist in brutalist minimalist philosophy, raw concrete structures, and sustainable living." 
     }
   },
   {

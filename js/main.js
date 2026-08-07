@@ -1,5 +1,5 @@
 /* ==========================================================================
-   THAAPAT CHAWAKIT (ถาปัตย์เฉพาะกิจ) - MAIN JAVASCRIPT CONTROLLER
+   THAAPAT CHAWAKIT (ถาปัตเฉพาะกิจ) - MAIN JAVASCRIPT CONTROLLER
    ========================================================================== */
 
 let currentLang = 'th';
@@ -188,7 +188,7 @@ function renderTeam() {
       <div class="team-split-grid">
         <div class="team-photo-column">
           <div class="team-photo-container" style="position: relative;">
-            <img src="assets/architects_team.jpg" alt="Thapat Chawakit Architects" class="team-full-img" />
+            <img src="assets/architects_team.jpg" alt="Thapat Chaphokit Architects" class="team-full-img" />
             
             <!-- Hotspot 1: Tonkla (Left) -->
             <div class="architect-hotspot pos-left" data-id="tonkla">
