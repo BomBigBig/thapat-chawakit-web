@@ -315,26 +315,46 @@ window.openProjectModal = function(id) {
   const blueprintTitle = translations[currentLang].modal_blueprint_title;
   const materialsTitle = translations[currentLang].modal_materials_title;
 
+  let galleryHtml = '';
+  if (project.gallery && project.gallery.length > 0) {
+    galleryHtml = `
+      <div style="margin-top: 3rem;">
+        <h4 style="margin-bottom: 1.5rem;">Project Gallery</h4>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem;">
+          ${project.gallery.map(img => `<img src="${img}" alt="Gallery image" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 4px;" loading="lazy" />`).join('')}
+        </div>
+      </div>
+    `;
+  }
+
+  let blueprintHtml = '';
+  if (project.blueprint) {
+    blueprintHtml = `
+        <h4 style="margin-top: 2rem;">${blueprintTitle}</h4>
+        <div class="modal-img-box">
+          <img src="${project.blueprint}" alt="Blueprint" />
+        </div>
+    `;
+  }
+
   content.innerHTML = `
     <h2 class="modal-title">${title}</h2>
     <div class="modal-specs">
-      ${project.specs.map(s => `<span class="tag-badge">${s}</span>`).join('')}
+      ${(project.specs || []).map(s => `<span class="tag-badge">${s}</span>`).join('')}
     </div>
     
     <div class="modal-body-grid">
       <div class="modal-img-box">
-        <img src="${project.image}" alt="${title}" />
+        <img src="${project.image}" alt="${title}" style="max-height: 80vh; width: 100%; object-fit: contain; background: #f9f9f9; padding: 1rem;" />
       </div>
       <div class="modal-info-box">
         <h4>${materialsTitle}</h4>
-        <p>${details}</p>
+        <p style="white-space: pre-wrap; line-height: 1.8;">${details || ''}</p>
         
-        <h4>${blueprintTitle}</h4>
-        <div class="modal-img-box">
-          <img src="${project.blueprint}" alt="Blueprint" />
-        </div>
+        ${blueprintHtml}
       </div>
     </div>
+    ${galleryHtml}
   `;
 
   modal.classList.add('open');

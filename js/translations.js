@@ -41,8 +41,8 @@ const translations = {
     section_01_desc2: "เราพร้อมทุ่มเทเวลาและตั้งใจออกแบบบ้านทุกหลังร่วมกับคุณ เพื่อให้บ้านเป็นพื้นที่แห่งความสงบสุขและทรงคุณค่าสูงสุดแก่ชีวิต",
     manifesto_authenticity: "การรวมพลังของ 3 สถาปนิกอิสระ | มุ่งเน้นการออกแบบบ้านทีละหลังด้วยความประณีตสูงสุด",
     
-    section_02_num: "[02] — ผลงาน",
-    section_02_title: "ร่วมเป็นส่วนหนึ่งในผลงานแรกของพวกเรา",
+    section_02_num: "[02] — โปรเจกต์",
+    section_02_title: "ร่วมเป็นส่วนหนึ่งในโปรเจกต์แรกของพวกเรา",
     section_02_sub: "เปิดผืนผ้าใบสถาปัตยกรรมร่วมกับ ถาปัตเฉพาะกิจ เพื่อรังสรรค์บ้านหลังแรกที่เป็นผลงานชิ้นเอกชิ้นแรกของกลุ่มพวกเรา",
     inaugural_empty_badge: "[ INAUGURAL CANVAS // ผืนผ้าใบที่เปิดกว้างสำหรับบ้านในฝันของคุณ ]",
     cta_first_client_title: "ร่วมสร้างสรรค์สถาปัตยกรรมที่เป็นเอกลักษณ์ร่วมกัน",
@@ -208,9 +208,31 @@ const translations = {
 const realWorksData = [
   {
     id: "work1",
-    image: "assets/real_work_1.png",
-    title: { th: "Modern Sanctuary Render #01", en: "Modern Sanctuary Render #01" },
-    desc: { th: "ผลงานออกแบบจริง โครงสร้างคอนกรีตมินิมอลผสานธรรมชาติ", en: "Bespoke minimalist concrete structure integrated with natural surroundings." }
+    image: "assets/BaanSapsiri_IN/รับแขก.png",
+    title: { th: "BaanSapsiri_IN", en: "BaanSapsiri_IN" },
+    desc: { 
+      th: "ออกแบบภายในที่เพชรบุรี กับโจทย์ 'Modern Muji' มู้ดญี่ปุ่นที่แสนอบอุ่น", 
+      en: "Interior design project in Phetchaburi. Modern Muji style wrapped in a warm Japanese aesthetic." 
+    },
+    details: {
+      th: "เปลี่ยนบ้านธรรมดาให้เป็น Safe Zone... ในมู้ดญี่ปุ่นที่แสนอบอุ่น\n\nนี้โปรเจกต์ออกแบบภายในที่เพชรบุรีครับ กับโจทย์ 'Modern Muji' สำหรับบ้าน ที่ต้องการความเรียบง่าย แต่ไม่น่าเบื่อ มี Mood & Tone สีไม้ละมุนตา เน้นความโปร่ง โล่ง สบาย ให้ความรู้สึกเหมือนได้มาผ่อนคลายและเป็นส่วนตัว",
+      en: "Transforming an ordinary house into a personal sanctuary... wrapped in a warm Japanese aesthetic.\n\nIntroducing our latest interior design project in Phetchaburi. The brief was 'Modern Muji' creating a home that is minimalist yet far from monotonous. We utilized a palette of soft, soothing wood tones to prioritize an open, airy atmosphere, resulting in a space that feels genuinely private and relaxing."
+    },
+    gallery: [
+      "assets/BaanSapsiri_IN/โฟเย.png",
+      "assets/BaanSapsiri_IN/รับแขก.png",
+      "assets/BaanSapsiri_IN/มุมนั่งเล่น.png",
+      "assets/BaanSapsiri_IN/มุมทานอาหาร.png",
+      "assets/BaanSapsiri_IN/มุมครัว.png",
+      "assets/BaanSapsiri_IN/ทางขึ้นชั้น 2.png",
+      "assets/BaanSapsiri_IN/ห้องทำงาน.png",
+      "assets/BaanSapsiri_IN/ห้องนอนใหญ่.png",
+      "assets/BaanSapsiri_IN/ห้องน้ำห้องนอนใหญ่.png",
+      "assets/BaanSapsiri_IN/ห้องแต่งตัว.png",
+      "assets/BaanSapsiri_IN/ห้องนอน 1.png",
+      "assets/BaanSapsiri_IN/ห้องนอน 2.png"
+    ],
+    specs: ["Interior Design", "Modern Muji", "Phetchaburi"]
   },
   {
     id: "work2",
