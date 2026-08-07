@@ -3,7 +3,7 @@
    Style: Minimalist Editorial Architecture (Image 1 & Image 2 Reference)
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Thai:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Prompt:wght@300;400;500;600;700&family=Kanit:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Tilt+Warp&display=swap');
 
 :root {
   /* Color Palette - letusibiza.com Pure Black & White Boutique System */
@@ -21,9 +21,9 @@
   --border-dark: #222222;      /* Fine Dark Hairline Border */
   --accent-gold: #0A0A0A;      /* Pure Black & White Contrast Accent */
 
-  --font-heading: 'Tilt Warp', sans-serif;
-  --font-body: 'Outfit', 'Sukhumvit Set', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'Space Mono', monospace;
+  --font-heading: 'Tilt Warp', 'Kanit', sans-serif;
+  --font-body: 'Outfit', 'Prompt', 'Sukhumvit Set', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Kanit', monospace;
 
   --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-fast: all 0.2s ease;
