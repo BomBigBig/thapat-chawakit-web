@@ -330,7 +330,6 @@ window.openProjectModal = function(id) {
   document.getElementById('fs-project-year').textContent = subtitle;
   
   let desc = project.details ? project.details[currentLang] : (project.desc ? project.desc[currentLang] : "");
-  if (desc.length > 150) desc = desc.substring(0, 150) + "...";
   document.getElementById('fs-project-desc').textContent = desc;
 
   modal.style.display = 'flex';
