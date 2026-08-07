@@ -21,6 +21,11 @@ const translations = {
     vision_explore: "• ปรัชญาและแก่นแท้การออกแบบของ ถาปัตเฉพาะกิจ",
     vision_editorial_statement: '<span class="text-bold">"บ้านที่ดี ไม่จำเป็นต้องเหมือนบ้านใคร... แต่ต้องเป็นบ้านที่สร้างมาแล้ว \'พอดี\' กับการใช้ชีวิตและตัวตนของคุณที่สุด"</span> <span class="text-muted-flow">นั่นคือปรัชญาหลักในการทำงานของเรา ถาปัตเฉพาะกิจมุ่งเน้นการออกแบบที่จริงใจ เข้าใจวิถีชีวิตของคุณอย่างลึกซึ้ง เพื่อสร้างสเปซที่เป็นเอกลักษณ์และเกิดมาเพื่อคุณคนเดียว</span>',
     
+    services_label: "• รับออกแบบอะไรบ้าง (OUR SERVICES)",
+    services_arch_en: "ARCHITECTURAL<br>DESIGN",
+    services_arch_th: "1. ออกแบบสถาปัตยกรรม",
+    services_int_en: "INTERIOR<br>DESIGN",
+    services_int_th: "2. ออกแบบภายใน",
     vision_pillar1_title: "จุดเริ่มต้นคือ 'ตัวคุณ'",
     vision_pillar1_desc: '<span class="text-dark">เราเชื่อว่าบ้านที่ดีที่สุดเริ่มต้นจากเจ้าของบ้าน</span> <span class="text-sub">สถาปนิกของเราพร้อมรับฟังทุกความต้องการและวิถีชีวิตของคุณ เพื่อแปลความหมายออกมาเป็นพื้นที่ที่ตอบสนองการใช้ชีวิตได้อย่างแท้จริงและพอดีที่สุด</span>',
     
@@ -115,9 +120,14 @@ const translations = {
     statement_phone: "091-131-7205",
     
     vision_title: "OUR VISION OF BESPOKE LIVING",
-    vision_explore: "• ARCHITECTURAL PHILOSOPHY & MANIFESTO",
-    vision_editorial_statement: '<span class="text-bold">"A good home doesn\'t need to look like anyone else\'s... but it must be built to perfectly fit your lifestyle and your truest self."</span> <span class="text-muted-flow">This is our core philosophy. We focus on sincere design, deeply understanding your way of life to craft a unique architectural space born only for you.</span>',
+    vision_explore: "• Philosophy & Core Principles of Thapat Chaphokit",
+    vision_editorial_statement: '<span class="text-bold">"A true home isn\'t built to impress others... it\'s built to perfectly fit your life and identity."</span> <span class="text-muted-flow">This is our core philosophy. Thapat Chaphokit focuses on sincere design, deeply understanding your lifestyle to create a unique space meant only for you.</span>',
     
+    services_label: "• OUR SERVICES",
+    services_arch_en: "ARCHITECTURAL<br>DESIGN",
+    services_arch_th: "1. Architectural Design",
+    services_int_en: "INTERIOR<br>DESIGN",
+    services_int_th: "2. Interior Design",
     vision_pillar1_title: "IT STARTS WITH YOU",
     vision_pillar1_desc: '<span class="text-dark">The best homes begin with the homeowner.</span> <span class="text-sub">Our architects are ready to listen to your needs and lifestyle, translating them into spaces that truly and perfectly accommodate your daily life.</span>',
     
