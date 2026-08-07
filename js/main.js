@@ -293,6 +293,7 @@ function initModalEvents() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeProjectModal();
     if (e.key === 'ArrowRight') nextGalleryImage();
+    if (e.key === 'ArrowLeft') prevGalleryImage();
   });
 }
 
@@ -341,6 +342,18 @@ window.openProjectModal = function(id) {
 window.nextGalleryImage = function() {
   if (currentGallery.length <= 1) return;
   currentGalleryIndex = (currentGalleryIndex + 1) % currentGallery.length;
+  const imgElement = document.getElementById('fs-current-image');
+  
+  imgElement.style.opacity = 0;
+  setTimeout(() => {
+    imgElement.src = currentGallery[currentGalleryIndex];
+    imgElement.style.opacity = 1;
+  }, 200);
+};
+
+window.prevGalleryImage = function() {
+  if (currentGallery.length <= 1) return;
+  currentGalleryIndex = (currentGalleryIndex - 1 + currentGallery.length) % currentGallery.length;
   const imgElement = document.getElementById('fs-current-image');
   
   imgElement.style.opacity = 0;
