@@ -2513,3 +2513,68 @@ button {
   }
 }
 
+/* ==========================================================================
+   DECORATIVE ELEMENTS
+   ========================================================================== */
+.deco-element {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.85;
+}
+
+.section-vision, .section-process, .section-portfolio, .section-contact {
+  position: relative;
+}
+
+.deco-1 {
+  top: -8%;
+  right: -2%;
+  width: 250px;
+  transform: rotate(15deg);
+  animation: floatDeco 6s ease-in-out infinite alternate;
+}
+
+.deco-2 {
+  bottom: -5%;
+  left: -5%;
+  width: 180px;
+  transform: rotate(-25deg);
+  z-index: 10;
+  animation: floatDeco 8s ease-in-out infinite alternate-reverse;
+}
+
+.deco-3 {
+  top: 40%;
+  right: -5%;
+  width: 320px;
+  opacity: 0.5;
+  animation: spinDeco 25s linear infinite;
+}
+
+.deco-4 {
+  top: 15%;
+  left: 5%;
+  width: 140px;
+  transform: rotate(-10deg);
+  z-index: 5;
+  animation: floatDeco 5s ease-in-out infinite alternate;
+}
+
+@keyframes floatDeco {
+  0% { transform: translateY(0) rotate(15deg) scale(1); }
+  100% { transform: translateY(-30px) rotate(20deg) scale(1.05); }
+}
+
+@keyframes spinDeco {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  .deco-1 { width: 140px; right: -8%; top: -2%; }
+  .deco-2 { width: 110px; left: -8%; bottom: 2%; }
+  .deco-3 { width: 220px; opacity: 0.25; right: -15%; }
+  .deco-4 { width: 90px; left: 2%; top: 5%; }
+}
+
