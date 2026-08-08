@@ -2233,7 +2233,7 @@ button {
   .section-team,
   .section-contact,
   .section-vision {
-    padding: 3rem 1.25rem;
+    padding: 3.5rem 1.5rem;
   }
 
   .navbar {
@@ -2302,17 +2302,19 @@ button {
   }
 
   .giant-brand-text-white {
-    font-size: clamp(1.8rem, 9vw, 3.5rem);
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
     white-space: normal;
     word-break: break-word;
-    line-height: 0.9;
+    line-height: 1;
   }
 
   .project-list-item {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
-    padding: 2.5rem 1rem;
-    margin: 0 -1rem;
+    padding: 3rem 0;
+    margin: 0;
+    border-radius: 0;
   }
   .project-list-desc {
     padding: 0;
@@ -2321,8 +2323,9 @@ button {
     font-size: 1.6rem;
   }
   .project-list-images {
+    order: -1;
     grid-template-columns: 1fr;
-    gap: 0.5rem;
+    gap: 0;
   }
   .project-list-images img {
     aspect-ratio: 16 / 9;
@@ -2426,6 +2429,41 @@ button {
 
   .btn-send {
     font-size: 1.25rem;
+  }
+
+  /* Hotspot Override for Mobile */
+  .hotspot-pin { display: none !important; }
+  .architect-hotspot {
+    position: static !important;
+  }
+  .architect-popup-card {
+    position: static !important;
+    width: 100% !important;
+    transform: none !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    box-shadow: none;
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 1.5rem 0;
+    background: transparent;
+  }
+  .architect-popup-card::after { display: none; }
+  .team-photo-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Footer Mobile */
+  .footer-cta-link {
+    font-size: 12vw;
+    white-space: normal;
+    word-break: break-word;
+    line-height: 1.1;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
   }
 }
 
