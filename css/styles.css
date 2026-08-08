@@ -2444,8 +2444,8 @@ button {
     pointer-events: auto !important;
     box-shadow: none;
     border-bottom: 1px solid var(--border-subtle);
-    padding: 1.5rem 0;
-    background: transparent;
+    padding: 1.5rem;
+    background-color: var(--bg-primary);
   }
   .architect-popup-card::after { display: none; }
   .team-photo-container {
