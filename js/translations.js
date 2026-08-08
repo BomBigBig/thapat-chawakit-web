@@ -211,8 +211,8 @@ const realWorksData = [
     image: "assets/BaanSapsiri_IN/รับแขก.png",
     title: { th: "BaanSapsiri_IN", en: "BaanSapsiri_IN" },
     desc: { 
-      th: "ออกแบบภายในที่เพชรบุรี กับโจทย์ 'Modern Muji' มู้ดญี่ปุ่นที่แสนอบอุ่น", 
-      en: "Interior design project in Phetchaburi. Modern Muji style wrapped in a warm Japanese aesthetic." 
+      th: "โปรเจกต์ออกแบบภายในที่เพชรบุรีครับ กับโจทย์ 'Modern Muji' สำหรับบ้าน ที่ต้องการความเรียบง่าย แต่ไม่น่าเบื่อ มี Mood & Tone สีไม้ละมุนตา เน้นความโปร่ง โล่ง สบาย ให้ความรู้สึกเหมือนได้มาผ่อนคลายและเป็นส่วนตัว", 
+      en: "An interior design project in Phetchaburi with a 'Modern Muji' concept for a house that desires simplicity without being boring. Featuring a soft wood Mood & Tone, emphasizing an airy, open, and comfortable atmosphere, giving a sense of relaxation and privacy." 
     },
     details: {
       th: "เปลี่ยนบ้านธรรมดาให้เป็น Safe Zone... ในมู้ดญี่ปุ่นที่แสนอบอุ่น\n\nนี้โปรเจกต์ออกแบบภายในที่เพชรบุรีครับ กับโจทย์ 'Modern Muji' สำหรับบ้าน ที่ต้องการความเรียบง่าย แต่ไม่น่าเบื่อ มี Mood & Tone สีไม้ละมุนตา เน้นความโปร่ง โล่ง สบาย ให้ความรู้สึกเหมือนได้มาผ่อนคลายและเป็นส่วนตัว",
