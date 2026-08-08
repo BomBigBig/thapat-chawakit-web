@@ -2529,16 +2529,16 @@ button {
 }
 
 .deco-1 {
-  top: -8%;
-  right: -2%;
+  top: -2%;
+  right: 2%;
   width: 250px;
   transform: rotate(15deg);
   animation: floatDeco 6s ease-in-out infinite alternate;
 }
 
 .deco-2 {
-  bottom: -5%;
-  left: -5%;
+  bottom: 5%;
+  left: 2%;
   width: 180px;
   transform: rotate(-25deg);
   z-index: 10;
@@ -2547,7 +2547,7 @@ button {
 
 .deco-3 {
   top: 40%;
-  right: -5%;
+  right: 2%;
   width: 320px;
   opacity: 0.5;
   animation: spinDeco 25s linear infinite;
@@ -2573,9 +2573,9 @@ button {
 }
 
 @media (max-width: 768px) {
-  .deco-1 { width: 140px; right: -8%; top: -2%; }
-  .deco-2 { width: 110px; left: -8%; bottom: 2%; }
-  .deco-3 { width: 220px; opacity: 0.25; right: -15%; }
+  .deco-1 { width: 140px; right: 2%; top: -2%; }
+  .deco-2 { width: 110px; left: 2%; bottom: 2%; }
+  .deco-3 { width: 220px; opacity: 0.25; right: 2%; }
   .deco-4 { width: 90px; left: 2%; top: 5%; }
 }
 
@@ -2637,7 +2637,7 @@ button {
 .shape-about-2 { width: 15px; height: 15px; bottom: 10%; right: 10%; animation: floatShape 4s ease-in-out infinite alternate; }
 
 .shape-process-1 { width: 45px; height: 45px; top: 5%; right: 35%; animation: floatShape 8s ease-in-out infinite alternate; }
-.shape-process-2 { width: 20px; height: 20px; bottom: -10px; left: 15%; animation: spinShape 10s linear infinite; }
+.shape-process-2 { width: 20px; height: 20px; bottom: 5%; left: 15%; animation: spinShape 10s linear infinite; }
 
 .shape-projects-1 { width: 35px; height: 35px; top: 15%; left: 5%; animation: spinShape 12s linear infinite reverse; }
 .shape-projects-2 { width: 25px; height: 25px; bottom: 25%; right: 5%; animation: floatShape 6s ease-in-out infinite alternate; }
