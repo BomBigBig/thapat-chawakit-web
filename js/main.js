@@ -186,8 +186,8 @@ function renderProjects(category) {
           </a>
         </div>
         <div class="project-list-images" onclick="openProjectModal('${p.id}')">
-          <img src="${p.gallery && p.gallery.length > 0 ? p.gallery[0] : p.image}" alt="${title} view 1" loading="lazy" />
-          <img src="${p.gallery && p.gallery.length > 1 ? p.gallery[1] : p.image}" alt="${title} view 2" loading="lazy" />
+          <img src="${p.gallery && p.gallery.length > 0 ? encodeURI(p.gallery[0]) : encodeURI(p.image)}" alt="${title} view 1" loading="lazy" />
+          <img src="${p.gallery && p.gallery.length > 1 ? encodeURI(p.gallery[1]) : encodeURI(p.image)}" alt="${title} view 2" loading="lazy" />
         </div>
       </article>
     `;
@@ -345,9 +345,9 @@ window.openProjectModal = function(id) {
   
   // Set up gallery array
   if (project.gallery && project.gallery.length > 0) {
-    currentGallery = project.gallery;
+    currentGallery = project.gallery.map(url => encodeURI(url));
   } else {
-    currentGallery = [project.image];
+    currentGallery = [encodeURI(project.image)];
   }
   currentGalleryIndex = 0;
   
