@@ -2005,17 +2005,30 @@ button {
   line-height: 0.9;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: var(--bg-surface);
+  
+  /* Text Fill & Gradient for Shine Animation */
+  background: linear-gradient(110deg, var(--bg-surface) 35%, var(--color-orange) 50%, var(--bg-surface) 65%);
+  background-size: 300% 100%;
+  background-position: 0% 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* Fallback */
+
   text-decoration: none;
   white-space: nowrap;
   display: block;
-  transition: color 0.4s ease, transform 0.4s ease;
+  transition: transform 0.4s ease;
   transform-origin: left center;
 }
 
 .footer-cta-link:hover {
-  color: #a3a3a3;
   transform: scale(1.02);
+  animation: shineLeft 1.2s ease-in-out infinite;
+}
+
+@keyframes shineLeft {
+  0% { background-position: 0% 0; }
+  100% { background-position: 100% 0; }
 }
 
 .footer-bottom {
