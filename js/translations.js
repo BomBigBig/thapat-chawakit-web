@@ -233,6 +233,53 @@ const realWorksData = [
       "assets/BaanSapsiri_IN/ห้องนอน 2.png"
     ],
     specs: ["Interior Design", "Modern Muji", "Phetchaburi"]
+  },
+  {
+    id: "kouprey",
+    image: "assets/Kouprey_SSK/22.jpg",
+    title: { th: "Kouprey_SSK", en: "Kouprey_SSK" },
+    desc: {
+      th: "ร้านอาหารและคราฟเบียร์สไตล์ลอฟท์ อินดัสเทรียล โปร่งโล่ง เหมาะสำหรับการนั่งชิลล์ยามเย็น",
+      en: "A loft-industrial style restaurant and craft beer bar, designed with high ceilings for an airy and relaxing evening atmosphere."
+    },
+    details: {
+      th: "ร้านอาหารและคราฟเบียร์ได้แรงบันดาลใจมาจาก สัตว์ขึ้นชื่อและดอกไม้ประจำจังหวัด นำมาปรับเข้ากับสไตล์ลอฟท์ อินดัสเทรียลเพื่อให้ร้านเหมาะสำหรับการนั่งทานเบียร์และอาหารตอนเย็น สเปซที่สูงภายในร้านช่วยให้ร้านดูไม่อึดอัด",
+      en: "This restaurant and craft beer venue draws inspiration from the province's famous animals and flowers, adapted into a loft-industrial style perfectly suited for enjoying evening beers and dining. The high interior space ensures the venue feels airy and unconfined."
+    },
+    gallery: [
+      "assets/Kouprey_SSK/22.jpg",
+      "assets/Kouprey_SSK/23.jpg",
+      "assets/Kouprey_SSK/24.jpg",
+      "assets/Kouprey_SSK/26.jpg",
+      "assets/Kouprey_SSK/27.jpg",
+      "assets/Kouprey_SSK/28.jpg",
+      "assets/Kouprey_SSK/29.jpg",
+      "assets/Kouprey_SSK/30.jpg",
+      "assets/Kouprey_SSK/31.jpg",
+      "assets/Kouprey_SSK/32.jpg",
+      "assets/Kouprey_SSK/33.jpg"
+    ],
+    specs: ["Commercial Design", "Loft Industrial", "Sisaket"]
+  },
+  {
+    id: "apt_k1",
+    image: "assets/APT_K1_CNX/1.jpg",
+    title: { th: "APT_K1_CNX", en: "APT_K1_CNX" },
+    desc: {
+      th: "อพาร์ตเมนต์อาคารแฝดสไตล์ Modern Brutalist โชว์สัจจะวัสดุ พร้อมสเปซส่วนกลางเชื่อมต่อคอมมูนิตี้",
+      en: "A twin-building apartment in Modern Brutalist style, showcasing raw materials with a central communal space connecting the two buildings."
+    },
+    details: {
+      th: "อาคารแฝดที่ใช้คอนเซปต์ โมเดิร์น บรูทัลลิสต์ (Modern Brutalist) เพื่อให้ตัวอาคารไม่ตกยุคสมัย โดยใช้สัจจะวัสดุ และมีสเปซส่วนกลางที่เชื่อมระหว่าง 2 อาคารเข้าหากัน เป็นทั้งคอมมูนิตี้และพื้นที่พักผ่อน",
+      en: "A twin-building project utilizing a Modern Brutalist concept to ensure the architecture remains timeless. The design embraces truth to materials and features a central space bridging the two buildings, serving as both a community hub and a relaxation area."
+    },
+    gallery: [
+      "assets/APT_K1_CNX/1.jpg",
+      "assets/APT_K1_CNX/2.jpg",
+      "assets/APT_K1_CNX/3.jpg",
+      "assets/APT_K1_CNX/4.jpg"
+    ],
+    specs: ["Architecture", "Modern Brutalist", "Chiang Mai"]
   }
 ];
 
