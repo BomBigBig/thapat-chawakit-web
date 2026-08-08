@@ -2578,3 +2578,30 @@ button {
   .deco-4 { width: 90px; left: 2%; top: 5%; }
 }
 
+/* ==========================================================================
+   COLORFUL PLAYFUL TYPOGRAPHY
+   ========================================================================== */
+#about .section-index { color: var(--color-blue); }
+#process .section-index { color: var(--color-green); }
+#projects .section-index { color: var(--color-orange); }
+#team .section-index { color: var(--color-blue); }
+#contact .section-index { color: var(--color-green); }
+
+.magazine-label { color: var(--color-blue); }
+.pillar-num-inline { color: var(--color-green); }
+
+/* Process Numbers */
+.process-step-slide:nth-child(1) .step-number-badge { color: var(--color-orange); }
+.process-step-slide:nth-child(2) .step-number-badge { color: var(--color-blue); }
+.process-step-slide:nth-child(3) .step-number-badge { color: var(--color-green); }
+.process-step-slide:nth-child(4) .step-number-badge { color: var(--color-orange); }
+.process-step-slide:nth-child(5) .step-number-badge { color: var(--color-blue); }
+
+.value-item:nth-child(1) .value-num { color: var(--color-orange); background-color: rgba(244,120,32,0.1); }
+.value-item:nth-child(2) .value-num { color: var(--color-blue); background-color: rgba(45,136,200,0.1); }
+.value-item:nth-child(3) .value-num { color: var(--color-green); background-color: rgba(0,166,81,0.1); }
+
+/* Project Meta Labels */
+.project-list-meta span:nth-child(1) { color: var(--color-orange); }
+.project-list-meta span:nth-child(3) { color: var(--color-blue); }
+
