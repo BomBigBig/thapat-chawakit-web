@@ -123,6 +123,23 @@ button {
   text-transform: uppercase;
 }
 
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-main);
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.nav-menu-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex: 1;
+  justify-content: flex-end;
+}
+
 .nav-links {
   display: flex;
   gap: 2.5rem;
@@ -1999,19 +2016,45 @@ button {
   .navbar {
     padding: 0.85rem 1.25rem;
   }
+
+  .mobile-menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-menu-wrapper {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-primary);
+    flex-direction: column;
+    padding: 2rem 1.25rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    display: none;
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .nav-menu-wrapper.active {
+    display: flex;
+  }
   
   .nav-links {
     display: flex;
-    gap: 0.75rem;
-    font-size: 0.75rem;
-    overflow-x: auto;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    max-width: 55vw;
-    scrollbar-width: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.25rem;
+    align-items: flex-start;
+    width: 100%;
   }
-  .nav-links::-webkit-scrollbar {
-    display: none;
+
+  .nav-right {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+    width: 100%;
+    gap: 1.5rem;
   }
 
   .brand-logo {

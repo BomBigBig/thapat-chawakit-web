@@ -8,6 +8,7 @@ let activeProjectId = null;
 
 document.addEventListener('DOMContentLoaded', () => {
   initLanguageSwitcher();
+  initMobileMenu();
   initHeroBgSlider();
   initProcessImageSlider();
   renderProjects('all');
@@ -19,6 +20,28 @@ document.addEventListener('DOMContentLoaded', () => {
   // Set default language on load to override hardcoded HTML
   setLanguage(currentLang);
 });
+
+/* --------------------------------------------------------------------------
+   MOBILE HAMBURGER MENU
+   -------------------------------------------------------------------------- */
+function initMobileMenu() {
+  const toggleBtn = document.querySelector('.mobile-menu-toggle');
+  const menuWrapper = document.querySelector('.nav-menu-wrapper');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  if (toggleBtn && menuWrapper) {
+    toggleBtn.addEventListener('click', () => {
+      menuWrapper.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        menuWrapper.classList.remove('active');
+      });
+    });
+  }
+}
 
 /* --------------------------------------------------------------------------
    HERO FULL BACKGROUND PHOTO SLIDER (Dynamic Crossfade Transition)
