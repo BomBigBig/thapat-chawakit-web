@@ -473,6 +473,18 @@ button {
 .process-step-card.active-step::before {
   opacity: 1;
 }
+
+/* Accordion Logic for Process Steps */
+.step-card-desc,
+.step-card-highlight {
+  display: none;
+  margin-top: 0.75rem;
+}
+
+.process-step-card.active-step .step-card-desc,
+.process-step-card.active-step .step-card-highlight {
+  display: block;
+}
 .step-do-text {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.85); /* Solid White Body Text */
