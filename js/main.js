@@ -172,14 +172,22 @@ function renderProjects(category) {
     const learnText = translations[currentLang].cta_start_project;
 
     return `
-      <article class="project-card">
-        <img src="${p.image}" alt="${title}" class="project-img" loading="lazy" />
-        <div class="project-overlay-card">
-          <h3 class="project-card_title">${title}</h3>
-          <p class="project-card_desc">${desc}</p>
-          <a href="javascript:void(0)" class="project-link-btn" onclick="openProjectModal('${p.id}')">
-            View Details ↗
+      <article class="project-list-item">
+        <div class="project-list-info">
+          <h3 class="project-list-title">${title}</h3>
+          <div class="project-list-meta">
+            <span class="meta-label">STYLE</span>
+            <span class="meta-value">${p.specs && p.specs[1] ? p.specs[1] : 'Architecture'}</span>
+            <span class="meta-label">LOCATION</span>
+            <span class="meta-value">${p.specs && p.specs[2] ? p.specs[2] : 'Thailand'}</span>
+          </div>
+          <a href="javascript:void(0)" class="project-list-link" onclick="openProjectModal('${p.id}')">
+            VIEW DETAILS ↗
           </a>
+        </div>
+        <div class="project-list-images" onclick="openProjectModal('${p.id}')">
+          <img src="${p.gallery && p.gallery.length > 0 ? p.gallery[0] : p.image}" alt="${title} view 1" loading="lazy" />
+          <img src="${p.gallery && p.gallery.length > 1 ? p.gallery[1] : p.image}" alt="${title} view 2" loading="lazy" />
         </div>
       </article>
     `;
