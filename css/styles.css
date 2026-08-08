@@ -1181,9 +1181,9 @@ button {
 }
 
 .project-list-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem 2rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem 1.5rem;
   font-size: 0.8rem;
   border-left: 1px solid var(--text-main);
   padding-left: 1.5rem;
