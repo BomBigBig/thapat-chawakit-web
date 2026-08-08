@@ -105,15 +105,12 @@ button {
 .preloader-content {
   text-align: center;
 }
-.preloader-brand {
-  font-family: 'Outfit', 'Kanit', sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: var(--bg-primary);
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
+.preloader-logo-img {
+  height: 60px;
+  width: auto;
   display: block;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem auto;
+  filter: brightness(0) invert(1);
 }
 .preloader-bar {
   width: 120px;
@@ -175,20 +172,10 @@ button {
   flex-direction: column;
 }
 
-.brand-logo {
-  font-family: var(--font-heading);
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-}
-
-.brand-tag {
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  letter-spacing: 0.15em;
-  color: var(--text-muted);
-  text-transform: uppercase;
+.nav-logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
 }
 
 .mobile-menu-toggle {
@@ -2280,12 +2267,8 @@ button {
     gap: 1.5rem;
   }
 
-  .brand-logo {
-    font-size: 1rem;
-  }
-
-  .brand-tag {
-    font-size: 0.55rem;
+  .nav-logo-img {
+    height: 32px;
   }
 
   .hero-title-main {
