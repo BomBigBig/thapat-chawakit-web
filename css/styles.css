@@ -1839,8 +1839,7 @@ button {
 }
 
 @media (max-width: 768px) {
-  .fs-nav-top, .fs-center-layer, .fs-bottom-layer { padding: 1.5rem; }
-  .fs-center-layer { flex-direction: column; gap: 1rem; justify-content: center; text-align: center; }
+  .fs-nav-top, .fs-bottom-layer { padding: 1.5rem; }
   .fs-center-far-right { margin-top: 2rem; }
   .fs-project-title { font-size: 1.8rem; }
   .fs-bottom-layer { flex-direction: column; gap: 1.5rem; align-items: flex-start; }
@@ -2174,13 +2173,12 @@ button {
   }
 
   .fs-center-layer {
-    top: auto;
-    bottom: 5.5rem;
-    transform: none;
-    padding: 0 1.25rem;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0 1rem;
+    /* Removed top/bottom overrides to inherit top: 50% vertical centering */
+  }
+
+  .fs-center-right {
+    display: none; /* Hide category text on mobile to keep center clear */
   }
 
   .fs-center-btn {
