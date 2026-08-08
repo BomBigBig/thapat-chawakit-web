@@ -7,6 +7,38 @@ let activeCategory = 'all';
 let activeProjectId = null;
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Preloader Logic
+  const preloader = document.getElementById('preloader');
+  if (preloader) {
+    // Wait for minimum time to show animation, plus page load
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        preloader.classList.add('fade-out');
+        setTimeout(() => { preloader.style.display = 'none'; }, 800);
+      }, 500);
+    });
+  }
+
+  // Scroll Reveal Logic (Intersection Observer)
+  window.revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.15
+  });
+
+  const revealElements = document.querySelectorAll('.reveal-on-scroll');
+  if (revealElements.length > 0) {
+    revealElements.forEach(el => window.revealObserver.observe(el));
+  }
+
+
   initLanguageSwitcher();
   initMobileMenu();
   initHeroBgSlider();
@@ -172,7 +204,7 @@ function renderProjects(category) {
     const learnText = translations[currentLang].cta_start_project;
 
     return `
-      <article class="project-list-item">
+      <article class="project-list-item reveal-on-scroll">
         <div class="project-list-info">
           <h3 class="project-list-title">${title}</h3>
           <div class="project-list-meta">
@@ -192,6 +224,11 @@ function renderProjects(category) {
       </article>
     `;
   }).join('');
+
+  // Re-observe dynamically added reveal elements
+  if (window.revealObserver) {
+    container.querySelectorAll('.reveal-on-scroll').forEach(el => window.revealObserver.observe(el));
+  }
 }
 
 // Global Filter Helper
