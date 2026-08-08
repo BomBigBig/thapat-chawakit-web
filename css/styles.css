@@ -2606,3 +2606,57 @@ button {
 .project-list-meta span:nth-child(1) { color: var(--color-orange); }
 .project-list-meta span:nth-child(3) { color: var(--color-blue); }
 
+/* ==========================================================================
+   FUN GEOMETRIC SHAPES (CIRCLES & SQUARES)
+   ========================================================================== */
+.shape-element {
+  position: absolute;
+  pointer-events: none;
+  z-index: 2; /* Between background and text */
+  opacity: 0.85;
+}
+
+.shape-element.circle {
+  border-radius: 50%;
+}
+
+.shape-element.square {
+  border-radius: 4px; /* Slight rounding for friendly feel */
+}
+
+.bg-orange { background-color: var(--color-orange); }
+.bg-blue { background-color: var(--color-blue); }
+.bg-green { background-color: var(--color-green); }
+.bg-beige { background-color: var(--color-beige); }
+
+/* Sizes & Positions */
+.shape-hero-1 { width: 40px; height: 40px; top: 25%; left: 15%; animation: floatShape 7s ease-in-out infinite alternate; }
+.shape-hero-2 { width: 25px; height: 25px; bottom: 30%; right: 20%; animation: spinShape 15s linear infinite; }
+
+.shape-about-1 { width: 30px; height: 30px; top: 5%; left: 40%; animation: spinShape 20s linear infinite reverse; }
+.shape-about-2 { width: 15px; height: 15px; bottom: 10%; right: 10%; animation: floatShape 4s ease-in-out infinite alternate; }
+
+.shape-process-1 { width: 45px; height: 45px; top: 5%; right: 35%; animation: floatShape 8s ease-in-out infinite alternate; }
+.shape-process-2 { width: 20px; height: 20px; bottom: -10px; left: 15%; animation: spinShape 10s linear infinite; }
+
+.shape-projects-1 { width: 35px; height: 35px; top: 15%; left: 5%; animation: spinShape 12s linear infinite reverse; }
+.shape-projects-2 { width: 25px; height: 25px; bottom: 25%; right: 5%; animation: floatShape 6s ease-in-out infinite alternate; }
+
+.shape-team-1 { width: 20px; height: 20px; top: 10%; right: 45%; animation: floatShape 5s ease-in-out infinite alternate; }
+.shape-team-2 { width: 40px; height: 40px; bottom: 5%; left: 25%; animation: spinShape 18s linear infinite; }
+
+@keyframes floatShape {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(-25px) scale(1.15); }
+}
+
+@keyframes spinShape {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.15); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+@media (max-width: 768px) {
+  .shape-element { display: none; } /* Hide these small shapes on mobile to keep it clean */
+}
+
