@@ -57,12 +57,13 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-body {
+html, body {
   font-family: var(--font-body);
   background-color: var(--bg-primary);
   color: var(--text-main);
   line-height: 1.6;
   overflow-x: hidden;
+  width: 100%;
 }
 
 /* Typography Utility */
