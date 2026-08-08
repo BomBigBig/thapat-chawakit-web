@@ -351,8 +351,19 @@ window.openProjectModal = function(id) {
   }
   currentGalleryIndex = 0;
   
-  // Update DOM elements
-  document.getElementById('fs-current-image').src = currentGallery[currentGalleryIndex];
+  // Cleanup any lingering images from previous animations
+  const container = document.getElementById('fs-gallery-container');
+  container.querySelectorAll('.fs-image').forEach((img, idx) => {
+    if (idx > 0) img.remove();
+  });
+  
+  const currentImg = container.querySelector('.fs-image');
+  if (currentImg) {
+    currentImg.id = 'fs-current-image';
+    currentImg.src = currentGallery[currentGalleryIndex];
+    currentImg.style.transform = 'translateX(0)';
+    currentImg.classList.remove('sliding');
+  }
   document.getElementById('fs-project-title').textContent = project.title[currentLang];
   
   let subtitle = "2026";
@@ -373,26 +384,48 @@ window.openProjectModal = function(id) {
 window.nextGalleryImage = function() {
   if (currentGallery.length <= 1) return;
   currentGalleryIndex = (currentGalleryIndex + 1) % currentGallery.length;
-  const imgElement = document.getElementById('fs-current-image');
-  
-  imgElement.style.opacity = 0;
-  setTimeout(() => {
-    imgElement.src = currentGallery[currentGalleryIndex];
-    imgElement.style.opacity = 1;
-  }, 200);
+  slideGalleryImage('next');
 };
 
 window.prevGalleryImage = function() {
   if (currentGallery.length <= 1) return;
   currentGalleryIndex = (currentGalleryIndex - 1 + currentGallery.length) % currentGallery.length;
-  const imgElement = document.getElementById('fs-current-image');
-  
-  imgElement.style.opacity = 0;
-  setTimeout(() => {
-    imgElement.src = currentGallery[currentGalleryIndex];
-    imgElement.style.opacity = 1;
-  }, 200);
+  slideGalleryImage('prev');
 };
+
+function slideGalleryImage(direction) {
+  const container = document.getElementById('fs-gallery-container');
+  const oldImg = document.getElementById('fs-current-image');
+  
+  if (oldImg.classList.contains('sliding')) return; // Prevent rapid clicking
+  oldImg.classList.add('sliding');
+  
+  const newImg = document.createElement('img');
+  newImg.className = 'fs-image';
+  newImg.src = currentGallery[currentGalleryIndex];
+  newImg.alt = "Project View";
+  
+  // Initial position off-screen
+  if (direction === 'next') {
+    newImg.style.transform = 'translateX(100%)';
+  } else {
+    newImg.style.transform = 'translateX(-100%)';
+  }
+  
+  container.insertBefore(newImg, container.querySelector('.fs-overlay-gradient'));
+  
+  // Force reflow
+  void newImg.offsetWidth;
+  
+  // Animate
+  oldImg.style.transform = direction === 'next' ? 'translateX(-100%)' : 'translateX(100%)';
+  newImg.style.transform = 'translateX(0)';
+  
+  setTimeout(() => {
+    oldImg.remove();
+    newImg.id = 'fs-current-image';
+  }, 600); // matches CSS transition duration
+}
 
 window.closeProjectModal = function() {
   const modal = document.getElementById('project-modal');
