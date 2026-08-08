@@ -8,18 +8,25 @@
 :root {
   /* Color Palette - letusibiza.com Pure Black & White Boutique System */
   --bg-primary: #FFFFFF;       /* Pure Crisp White */
-  --bg-surface: #F8F8F6;       /* Boutique Off-White Canvas */
+  --bg-surface: #f9f7f3;       /* Warmer Off-White Canvas */
   --bg-dark: #0A0A0A;          /* Pitch Obsidian Dark Black */
   --bg-card: #FFFFFF;
   
-  --text-main: #0A0A0A;        /* Deep Black Typography */
-  --text-muted: #4F4F4F;       /* Crisp Charcoal Gray */
+  --text-main: #141414;        /* Deep Typography */
+  --text-muted: #5a5a5a;       /* Crisp Charcoal Gray */
   --text-light: #FFFFFF;       /* Pure White Text */
   --text-light-muted: #CCCCCC; /* Subdued Light Gray */
   
-  --border-subtle: #E2E2DF;    /* Fine Hairline Border */
+  --border-subtle: #e8e5df;    /* Warm Hairline Border */
   --border-dark: #222222;      /* Fine Dark Hairline Border */
-  --accent-gold: #0A0A0A;      /* Pure Black & White Contrast Accent */
+
+  /* Fun Architectural Palette */
+  --color-orange: #f47820;
+  --color-blue: #2d88c8;
+  --color-green: #00a651;
+  --color-beige: #c2b59b;
+
+  --accent-gold: var(--color-orange); /* Vibrant Primary Accent */
 
   --font-heading: 'Tilt Warp', 'Kanit', sans-serif;
   --font-body: 'Outfit', 'Prompt', 'Sukhumvit Set', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -27,6 +34,11 @@
 
   --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-fast: all 0.2s ease;
+}
+
+::selection {
+  background-color: var(--color-orange);
+  color: #fff;
 }
 
 /* Reset & Base */
@@ -126,7 +138,7 @@ button {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--bg-primary);
+  background-color: var(--color-orange);
   transform: translateX(-100%);
   animation: loadProgress 1.2s cubic-bezier(0.7, 0, 0.3, 1) forwards;
 }
@@ -243,7 +255,8 @@ button {
 }
 
 .nav-links a:hover {
-  opacity: 0.6;
+  color: var(--color-blue);
+  opacity: 1;
 }
 
 .nav-right {
@@ -1163,6 +1176,10 @@ button {
   background-color: var(--bg-surface);
 }
 
+.project-list-item:hover .project-list-title {
+  color: var(--color-blue);
+}
+
 .project-list-item:first-child {
   border-top: 1px solid var(--border-subtle);
 }
@@ -1534,12 +1551,12 @@ button {
 
 .architect-hotspot:hover .hotspot-pin {
   transform: scale(1.15);
-  background-color: #fff;
-  border-color: #fff;
+  background-color: var(--color-orange);
+  border-color: var(--color-orange);
 }
 
 .architect-hotspot:hover .hotspot-pin::after {
-  color: #000;
+  color: #fff;
 }
 
 /* Floating Popup Card Directly Over Image */
