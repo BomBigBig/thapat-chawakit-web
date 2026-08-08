@@ -393,9 +393,11 @@
        INTERACTIVE PROJECT DETAIL MODAL
        ========================================== -->
   <div id="project-modal" class="fullscreen-overlay" style="display: none;">
-    <div id="fs-gallery-container" class="fs-gallery-container" onclick="nextGalleryImage()">
+    <div id="fs-gallery-container" class="fs-gallery-container">
       <img id="fs-current-image" class="fs-image" src="" alt="Project View" />
       <div class="fs-overlay-gradient"></div>
+      <div class="fs-click-zone left" onclick="prevGalleryImage()"></div>
+      <div class="fs-click-zone right" onclick="nextGalleryImage()"></div>
     </div>
     
     <!-- Top Nav Layer -->
@@ -431,7 +433,7 @@
   </a>
 
   <!-- JavaScript Scripts -->
-  <script src="js/translations.js?v=nocache31"></script>
-  <script src="js/main.js?v=nocache31"></script>
+  <script src="js/translations.js?v=nocache32"></script>
+  <script src="js/main.js?v=nocache32"></script>
 </body>
 </html>

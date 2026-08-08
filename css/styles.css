@@ -1715,6 +1715,21 @@ button {
   pointer-events: none;
 }
 
+.fs-click-zone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: 5;
+  cursor: pointer;
+}
+.fs-click-zone.left {
+  left: 0;
+}
+.fs-click-zone.right {
+  right: 0;
+}
+
 /* TOP NAV */
 .fs-nav-top {
   position: absolute;
@@ -2173,8 +2188,7 @@ button {
   }
 
   .fs-center-layer {
-    padding: 0 1rem;
-    /* Removed top/bottom overrides to inherit top: 50% vertical centering */
+    display: none; /* Hide buttons on mobile, rely on image click zones */
   }
 
   .fs-center-right {
