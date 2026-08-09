@@ -326,16 +326,16 @@ const teamData = [
     id: "ta",
     image: "assets/team_ta.jpg",
     name: { 
-      th: "Mr. Nattawit Pitipornpat (TA)", 
+      th: "ณัฐวิชช์ ปิติพรพัฒน์ (ต้า)", 
       en: "Mr. Nattawit Pitipornpat (TA)" 
     },
     role: { 
-      th: "Co-Founder & Design Director (สถาปนิกคนขวา)", 
-      en: "Co-Founder & Design Director (Right)" 
+      th: "สถาปนิก", 
+      en: "Architect" 
     },
     exp: { 
-      th: "ผู้อำนวยการฝ่ายออกแบบ เชี่ยวชาญมิติทางสเปซ (Spatial Flow), แสงและเงา รวมถึงการเลือกสรรวัสดุระดับพรีเมียม", 
-      en: "Design Director specializing in spatial flow, the interplay of light and shadow, and the curation of premium materials." 
+      th: "ผู้เชี่ยวชาญด้านการออกแบบบ้านสไตล์ Tropical Modern และ การใช้พื้นที่ร่วมกับธรรมชาติ", 
+      en: "Expert in Tropical Modern home design and integrating living spaces with nature." 
     }
   }
 ];
