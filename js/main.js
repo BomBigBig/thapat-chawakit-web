@@ -307,6 +307,22 @@ function renderTeam() {
                 <p class="value-desc">${t.val_2_desc}</p>
               </div>
             </div>
+            
+            <div class="value-item">
+              <span class="value-num">03</span>
+              <div>
+                <h5 class="value-head">${t.val_3_title}</h5>
+                <p class="value-desc">${t.val_3_desc}</p>
+              </div>
+            </div>
+
+            <div class="value-item">
+              <span class="value-num">04</span>
+              <div>
+                <h5 class="value-head">${t.val_4_title}</h5>
+                <p class="value-desc">${t.val_4_desc}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
