@@ -111,30 +111,20 @@ function initProcessImageSlider() {
     currentStep = index;
   }
 
-  function startAutoCycle() {
-    clearInterval(autoTimer);
-    autoTimer = setInterval(() => {
-      const nextIndex = (currentStep + 1) % slides.length;
-      setActiveStep(nextIndex);
-    }, 4000);
-  }
+  // Removed auto-cycle to prevent layout jumping
+  // User must click or hover to change steps
 
-  // Hovering on right step card triggers that step image immediately
   cards.forEach((card, index) => {
     card.addEventListener('mouseenter', () => {
-      clearInterval(autoTimer);
       setActiveStep(index);
     });
-    card.addEventListener('mouseleave', () => {
-      startAutoCycle();
-    });
+    // No mouseleave event to restart auto-cycle
     card.addEventListener('click', () => {
       setActiveStep(index);
     });
   });
 
   setActiveStep(0);
-  startAutoCycle();
 }
 
 /* --------------------------------------------------------------------------
