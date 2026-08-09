@@ -5,7 +5,7 @@ const translations = {
     nav_home: "หน้าหลัก",
     nav_process: "ขั้นตอนการทำงาน",
     nav_about: "เรื่องราวของเรา",
-    nav_projects: "ผลงานสถาปัตยกรรม",
+    nav_projects: "โปรเจกต์",
     nav_team: "ทีมสถาปนิก",
     nav_contact: "ติดต่อเรา ↗",
     
