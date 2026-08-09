@@ -310,16 +310,16 @@ const teamData = [
     id: "bom",
     image: "assets/team_bom.jpg",
     name: { 
-      th: "Mr. Thanapat Pimmakorn (Bom)", 
+      th: "ธนภัทร พิมกรณ์ (บอม)", 
       en: "Mr. Thanapat Pimmakorn (Bom)" 
     },
     role: { 
-      th: "Founder & Principal Architect (สถาปนิกคนกลาง)", 
-      en: "Founder & Principal Architect (Center)" 
+      th: "สถาปนิก", 
+      en: "Architect" 
     },
     exp: { 
-      th: "ผู้ก่อตั้ง ถาปัตเฉพาะกิจ เชี่ยวชาญการวางปรัชญาสถาปัตยกรรมมินิมอล โครงสร้างคอนกรีตเปลือย และการอยู่อาศัยยั่งยืน", 
-      en: "Founder of Thapat Chaphokit. Specializes in minimalist architectural philosophies, exposed concrete structures, and sustainable living solutions." 
+      th: "ผู้เชี่ยวชาญด้านการออกแบบสไตล์ โมเดิร์น มินิมอล การใช้สัจจะวัสดุที่เรียบง่ายและลงตัว แสงธรรมชาติ การจัดวางสเปชที่มีมิติ", 
+      en: "Expert in Modern Minimalist design, emphasizing the authentic use of simple materials, natural light, and multidimensional spatial arrangements." 
     }
   },
   {
