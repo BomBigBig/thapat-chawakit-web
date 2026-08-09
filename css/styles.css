@@ -62,7 +62,6 @@ html, body {
   background-color: var(--bg-primary);
   color: var(--text-main);
   line-height: 1.6;
-  overflow-x: hidden;
   width: 100%;
 }
 
@@ -566,20 +565,18 @@ button {
   opacity: 1;
 }
 
-/* Accordion Logic removed to prevent layout shift */
-.process-step-card {
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
-}
-.process-step-card.active-step {
-  opacity: 1;
-}
-
+/* Accordion Logic for Process Steps */
 .step-card-desc,
 .step-card-highlight {
-  display: block; /* Always visible to prevent jumping */
+  display: none;
   margin-top: 0.75rem;
 }
+
+.process-step-card.active-step .step-card-desc,
+.process-step-card.active-step .step-card-highlight {
+  display: block;
+}
+
 .step-do-text {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.85); /* Solid White Body Text */
