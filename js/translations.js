@@ -58,13 +58,13 @@ const translations = {
     step1_goal: "เป้าหมาย: เข้าใจตัวคุณและที่ดิน ก่อนเริ่มออกแบบ",
     step2_title: "ขั้นที่ 2: วางแนวคิด ออกแบบร่าง และจัดทำภาพ 3 มิติ (CONCEPT DESIGN & 3D VISUALIZATION)",
     step2_do: "ทำอะไร: นำทุกอย่างที่คุยกันมาวิเคราะห์ แล้วจัดทำเป็นแบบร่างเบื้องต้น พร้อมผังพื้นห้องต่าง ๆ นำเสนอสไตล์บ้าน (Mood & Tone) และพัฒนาต่อเป็นภาพ 3 มิติทั้งภายนอกและภายใน เพื่อให้เห็นหน้าตาบ้านใกล้เคียงจริงมากที่สุด",
-    step2_goal: "เป้าหมาย: เพื่อให้เราเห็นภาพตรงกันทั้งฟังก์ชันการใช้งานและหน้าตาบ้านที่เสมือนจริง ก่อนลงมือก่อสร้าง มั่นใจได้ว่านี่คือบ้านในฝันของคุณจริง ๆ ขั้นตอนปรับแก้ได้จนกว่าจะลงตัว",
+    step2_goal: "เป้าหมาย: เพื่อให้เราเห็นภาพตรงกันทั้งฟังก์ชันการใช้งานและหน้าตาบ้านที่เสมือนจริง ก่อนลงมือก่อสร้าง มั่นใจได้ว่านี่คือบ้านในฝันของคุณจริง ๆ โดยในขั้นตอนนี้สามารถปรับแก้แบบได้จนกว่าทุกอย่างจะลงตัว",
     step3_title: "ขั้นที่ 3: จัดทำแบบก่อสร้าง และแบบฟอร์ม BOQ (CONSTRUCTION DOCUMENTS & BOQ)",
-    step3_do: "ทำอะไร: นำแบบที่ลงตัวแล้วมาจัดทำเป็น “แบบก่อสร้างฉบับสมบูรณ์” ระบุรายละเอียดสถาปัตยกรรมและวิศวกรรมครบถ้วน พร้อมกับจัดทำ “แบบฟอร์ม BOQ” แจกแจงรายการวัสดุและงานแต่ละหมวดไว้ให้ เพื่อให้คุณส่งต่อใหผู้รับเหมานำไปใส่ราคาได้",
+    step3_do: "ทำอะไร: นำแบบที่ลงตัวแล้วมาจัดทำเป็น “แบบก่อสร้างฉบับสมบูรณ์” ระบุรายละเอียดสถาปัตยกรรมและวิศวกรรมครบถ้วน พร้อมกับจัดทำ “แบบฟอร์ม BOQ” แจกแจงรายการวัสดุและงานแต่ละหมวดไว้ให้ เพื่อให้คุณส่งต่อให้ผู้รับเหมานำไปใส่ราคาได้",
     step3_goal: "เป้าหมาย: เพื่อให้ช่างมีแบบที่ชัดเจนในการทำงาน ลดข้อผิดพลาดหน้างาน ส่วนคุณก็ใช้แบบฟอร์ม BOQ เดียวกันให้ผู้รับเหมาหลายเจ้ากรอกราคาเปรียบเทียบกันได้อย่างเป็นธรรม",
     step4_title: "ขั้นที่ 4: จัดเตรียมเอกสารยื่นขออนุญาตก่อสร้าง (PERMITS APPLICATION)",
     step4_do: "ทำอะไร: เราช่วยดูแลจัดทำเอกสารและแบบฟอร์มต่าง ๆ ที่จำเป็นสำหรับการยื่นขออนุญาตก่อสร้างกับทางเทศบาลหรือ อบต. ในพื้นที่ให้ครบถ้วน",
-    step4_goal: "เป้าหมาย: เพื่อให้คุณได้แบบบ้านที่ถูกต้องตามกฎหมายควบคุมอาคารและระยะร่นต่าง ๆ สบายใจหายห่วง ไม่ต้องกังวลเรื่องกฏหมายและเอกสารที่ยุ่งยาก",
+    step4_goal: "เป้าหมาย: เพื่อให้คุณได้แบบบ้านที่ถูกต้องตามกฎหมายควบคุมอาคารและระยะร่นต่าง ๆ สบายใจหายห่วง ไม่ต้องกังวลเรื่องกฎหมายและเอกสารที่ยุ่งยาก",
     step5_title: "ขั้นที่ 5: ให้คำปรึกษาตลอดการก่อสร้าง (CONSTRUCTION OBSERVATION)",
     step5_do: "ทำอะไร: เราช่วยให้คำปรึกษาตลอดช่วงการก่อสร้าง พร้อมลงพื้นที่ไปดูหน้างานเป็นระยะ ๆ ตามที่ตกลงกัน",
     step5_goal: "เป้าหมาย: เพื่อตรวจสอบความถูกต้องได้ตรงตามแบบและสัดส่วนที่ออกแบบไว้หรือไม่ พร้อมช่วยแก้ปัญหาหน้างานหากมีเหตุสุดวิสัย จนกว่าบ้านจะสร้างเสร็จสมบูรณ์",
@@ -110,64 +110,64 @@ const translations = {
     nav_contact: "CONTACT US ↗",
     
     hero_title: "FAR FROM NOISE. CLOSE TO NATURE.",
-    hero_subtitle: "Remote homes for quiet, slower living.",
-    hero_carousel_caption: "Where distance feels like freedom and silence becomes your everyday.",
+    hero_subtitle: "Bespoke homes designed for quiet, intentional living.",
+    hero_carousel_caption: "Experience a space where the home is more than just a shelter—it becomes a seamlessly integrated part of your daily life.",
     
-    statement_title: "WE HELP YOU FIND YOUR PLACE FOR A CALM, COMFORTABLE LIFE AWAY FROM THE CONSTANT NOISE.",
+    statement_title: "WE HELP YOU CRAFT A LIVING SPACE THAT OFFERS GENUINE TRANQUILITY, RELAXATION, AND A TRUE ESCAPE FROM THE CITY'S CHAOS.",
     statement_sub: "Thapat Chaphokit — Beyond the City",
     statement_phone: "091-131-7205",
     
     vision_title: "OUR VISION OF BESPOKE LIVING",
     vision_explore: "• Philosophy & Core Principles of Thapat Chaphokit",
-    vision_editorial_statement: '<span class="text-bold">"A true home isn\'t built to impress others... it\'s built to perfectly fit your life and identity."</span> <span class="text-muted-flow">This is our core philosophy. Thapat Chaphokit focuses on sincere design, deeply understanding your lifestyle to create a unique space meant only for you.</span>',
+    vision_editorial_statement: '<span class="text-bold">"A great home doesn’t need to look like anyone else’s—it just needs to fit your life and identity perfectly."</span> <span class="text-muted-flow">That is our core philosophy. At Thapat Chaphokit, we focus on sincere design, taking the time to deeply understand your lifestyle to craft a unique space that belongs entirely to you.</span>',
     
     services_label: "• OUR SERVICES",
     services_arch_en: "ARCHITECTURAL<br>DESIGN",
     services_arch_th: "1. Architectural Design",
     services_int_en: "INTERIOR<br>DESIGN",
     services_int_th: "2. Interior Design",
-    vision_pillar1_title: "IT STARTS WITH YOU",
-    vision_pillar1_desc: '<span class="text-dark">The best homes begin with the homeowner.</span> <span class="text-sub">Our architects are ready to listen to your needs and lifestyle, translating them into spaces that truly and perfectly accommodate your daily life.</span>',
+    vision_pillar1_title: "IT ALL BEGINS WITH YOU",
+    vision_pillar1_desc: '<span class="text-dark">We believe the best architecture starts with the people who live in it.</span> <span class="text-sub">Our architects take the time to listen to your needs and understand your lifestyle, translating your vision into spaces that authentically and seamlessly accommodate your daily life.</span>',
     
-    vision_pillar2_title: "SINCERE & LIVING DESIGN",
-    vision_pillar2_desc: '<span class="text-dark">Beauty built for living, not just for show.</span> <span class="text-sub">We prioritize sincerity in our design, choosing materials true to context, and aligning light and wind with nature for sustainable comfort.</span>',
+    vision_pillar2_title: "SINCERE & BREATHING DESIGN",
+    vision_pillar2_desc: '<span class="text-dark">Aesthetics crafted for real living, not just for display.</span> <span class="text-sub">We prioritize sincerity in our designs by embracing materials that are true to their context and thoughtfully integrating natural light and ventilation to ensure sustainable, everyday comfort.</span>',
     
-    vision_pillar3_title: "UNIQUE ARCHITECTURAL IDENTITY",
-    vision_pillar3_desc: '<span class="text-dark">Life has no fixed template, and your home shouldn\'t either.</span> <span class="text-sub">We are dedicated to crafting architecture that reflects your distinct character, ensuring this home is truly one of a kind... and entirely yours.</span>',
+    vision_pillar3_title: "A UNIQUE ARCHITECTURAL IDENTITY",
+    vision_pillar3_desc: '<span class="text-dark">Because life doesn’t follow a fixed template, your home shouldn\'t either.</span> <span class="text-sub">We are dedicated to creating architecture that reflects your distinct character, ensuring that your home remains truly one-of-a-kind and undeniably yours.</span>',
     
     section_01_num: "[01]",
     section_01_title: "Where ideas become landmarks",
-    section_01_desc1: "Every great structure begins as a vision — a spark of creativity that takes shape through thoughtful design and precise execution. Thapat Chaphokit is a collective of 3 independent architects bound by a shared devotion to human-centric home design.",
-    section_01_desc2: "We dedicate our time and heart to designing each home intimately alongside you, ensuring your space becomes an enduring sanctuary.",
+    section_01_desc1: "Every great architectural piece begins with a vision—a spark of creativity that takes shape through meticulous planning and thoughtful design. Thapat Chaphokit is a collective of three independent architects bound by a profound passion for residential architecture.",
+    section_01_desc2: "We dedicate our time and pour our hearts into designing every home alongside you, ensuring it becomes a sanctuary of peace and a highly valued asset to your life.",
     manifesto_authenticity: "Collective of 3 Independent Architects | Crafting One Unique Home at a Time",
     
     section_02_num: "[02] — PROJECTS",
     section_02_title: "BE PART OF OUR INAUGURAL ARCHITECTURAL PIECE",
-    section_02_sub: "Partner with Thapat Chaphokit to open our canvas and craft a bespoke landmark home as our collective's premier architectural creation.",
+    section_02_sub: "Open an architectural canvas with Thapat Chaphokit and let us craft a bespoke home that will serve as our collective's inaugural masterpiece.",
     inaugural_empty_badge: "[ INAUGURAL CANVAS // RESERVED FOR YOUR DREAM HOME ]",
-    cta_first_client_title: "CRAFT A BESPOKE LANDMARK HOME TOGETHER",
-    cta_first_client_desc: "If you are seeking an architectural collective ready to dedicate 100% of their heart, time, and craftsmanship to your dream home, we are ready to open our canvas with you today.",
+    cta_first_client_title: "CO-CREATE A UNIQUE ARCHITECTURAL MASTERPIECE",
+    cta_first_client_desc: "If you are looking for a team of architects ready to dedicate their time, heart, and meticulous attention to your home, we are ready to open our canvas and begin designing with you today.",
     cta_start_project: "SUBMIT YOUR BRIEF FOR OUR INAUGURAL HOME ↗",
     
     section_process_num: "[01] — WORK PROCESS",
-    section_process_title: "OUR WORK PROCESS (FROM DREAM TO REALITY)",
-    section_process_sub: "Our meticulous step-by-step architectural design methodology from day one to key handover.",
+    section_process_title: "OUR PROCESS (FROM DREAM TO REALITY)",
+    section_process_sub: "A meticulous, step-by-step architectural design process—from the very beginning to the day we hand over your new home.",
     step1_title: "Step 01: Consultation & Site Visit",
-    step1_do: "What we do: Consultation to understand your brief, lifestyle, family members, and target budget.",
-    step1_care: "Special Care: We personally inspect your actual site in Chiang Mai to analyze wind orientation, sunlight angles, surrounding views, and local context to tailor the home perfectly to your plot.",
-    step1_goal: "Goal: Understand you and your land before starting the design.",
-    step2_title: "Step 02: Conceptual & Schematic Design",
-    step2_do: "What we do: Analyze all data and create initial schematic layouts (floor plans & spatial flow) alongside Mood & Tone presentation.",
-    step2_goal: "Goal: Ensure shared vision regarding spatial functionality and architectural style (adjustable until perfectly matched).",
+    step1_do: "What we do: A casual consultation to understand your lifestyle, your family's needs, and your target budget.",
+    step1_care: "Special Care: We personally conduct a site visit in Chiang Mai to analyze wind direction, sunlight, surrounding views, and the local neighborhood vibe. We do this to ensure your home is custom-tailored to the specific plot, not just another cookie-cutter design.",
+    step1_goal: "Goal: To fully understand you and your site before any design work begins.",
+    step2_title: "Step 02: Conceptual Design & 3D Visualization",
+    step2_do: "What we do: We analyze everything we’ve discussed to create initial schematic floor plans, present a cohesive Mood & Tone, and develop highly realistic 3D exterior and interior renderings.",
+    step2_goal: "Goal: To align our vision on both functionality and aesthetics before construction begins. We want to ensure this is truly your dream home, and designs can be adjusted until everything is perfect.",
     step3_title: "Step 03: Construction Documents & BOQ",
-    step3_do: "What we do: Prepare complete architectural blueprints, engineering calculations, and a detailed Bill of Quantities (BOQ).",
-    step3_goal: "Goal: Ensure error-free construction, precise budget control, contractor bidding comparison, and bank loan application ease.",
+    step3_do: "What we do: Once the design is finalized, we prepare comprehensive construction blueprints covering all architectural and engineering details. We also generate a detailed Bill of Quantities (BOQ) breaking down all materials and labor costs.",
+    step3_goal: "Goal: To provide contractors with clear, precise blueprints to minimize on-site errors, and to give you a standardized BOQ to fairly compare bids from multiple contractors.",
     step4_title: "Step 04: Building Permits Application",
-    step4_do: "What we do: Prepare and submit all required municipal building permit documentation and compliance forms.",
-    step4_goal: "Goal: Guarantee total legal building compliance, setback regulations, and complete peace of mind.",
+    step4_do: "What we do: We manage and prepare all the necessary documentation and forms required to successfully apply for building permits with the local municipality or sub-district authorities.",
+    step4_goal: "Goal: To ensure your home is legally compliant with all building codes and setback regulations, giving you complete peace of mind without the hassle of navigating complex paperwork.",
     step5_title: "Step 05: Construction Observation",
-    step5_do: "What we do: Guide contractor selection and perform periodic site inspections throughout the construction phase.",
-    step5_goal: "Goal: Verify craftsmanship adheres 100% to design blueprints, resolve site issues proactively, until keys are handed over.",
+    step5_do: "What we do: We provide consultation throughout the construction phase, conducting periodic site inspections as agreed upon.",
+    step5_goal: "Goal: To verify that the construction accurately reflects the design proportions and details, and to help solve any unforeseen on-site issues until the house is completely finished.",
     
     section_03_num: "[03] — TEAMS",
     section_03_title: "The Architectural Collective",
@@ -175,25 +175,25 @@ const translations = {
     team_story_tag: "OUR ORIGIN STORY",
     team_story_title: "The Story Behind Thapat Chaphokit",
     team_story_sub: "How Three Visionary Architects United Under One Collective",
-    team_story_p1: "Thapat Chaphokit was born from the meeting of minds between Mr. Thanapat (Bom), Mr. Jakkrit (Tonkla), and Mr. Nattawit (TA) — three independent architects bound by a conviction that true architecture should elevate human living beyond rigid corporate templates.",
-    team_story_p2: "Combining our specialized mastery in brutalist concrete structures, biophilic spatial flow, and architectural lighting, we formed this collective to craft bespoke sanctuaries tailored intimately to each homeowner's soul.",
+    team_story_p1: "Thapat Chaphokit was formed through the convergence of Mr. Thanapat (Bom), Mr. Jakkrit (Tonkla), and Mr. Nattawit (TA)—three independent architects sharing the same ideology. We all believe that the best homes aren't mass-produced by large corporations; rather, they are crafted from a profound understanding of the homeowner's identity and the natural context.",
+    team_story_p2: "By combining our specialized expertise—minimalist concrete structures, biophilic spatial flow, and architectural lighting rhythms—we deliver highly unique and personalized living spaces for our residents.",
     val_1_title: "Design Freedom",
-    val_1_desc: "Unbound by corporate red tape, focusing purely on client-centric vision.",
+    val_1_desc: "Unbound by corporate red tape, focusing purely on a client-centric vision.",
     val_2_title: "Human Sanctuary",
     val_2_desc: "Meticulously balancing natural lighting, airflow, and absolute privacy.",
     
     section_04_num: "[04] — CONTACT",
-    section_04_title: "Have questions or want to learn more about Thapat Chaphokit?",
-    section_04_sub: "We will get back to you with available options, details, and next steps.",
+    section_04_title: "Have questions or want to start designing your home with us?",
+    section_04_sub: "Send us your brief or vision, and our architectural team will get back to you to discuss the details as soon as possible.",
     form_fname: "First name*",
     form_lname: "Last name*",
     form_email: "Email Address*",
     form_phone: "Phone Number*",
-    form_message: "Your vision or inquiry*",
-    form_send: "Send ↗",
-    form_disclaimer: "By clicking \"Send\", you agree to the processing of your personal data.",
+    form_message: "Your budget details or design vision*",
+    form_send: "Send Inquiry ↗",
+    form_disclaimer: "By submitting this form, you agree to let us contact you regarding architectural consultations.",
     
-    footer_copyright: "© 2026 Thapat Chaphokit. Designed to live with nature.",
+    footer_copyright: "© 2026 Thapat Chaphokit. Designed for life seamlessly integrated with nature.",
     
     modal_blueprint_title: "Architectural Blueprint & Floor Plan",
     modal_materials_title: "Materials & Structural Engineering",
@@ -208,11 +208,11 @@ const realWorksData = [
     title: { th: "BaanSapsiri_IN", en: "BaanSapsiri_IN" },
     desc: { 
       th: "โปรเจกต์ออกแบบภายในที่เพชรบุรีครับ กับโจทย์ 'Modern Muji' สำหรับบ้าน ที่ต้องการความเรียบง่าย แต่ไม่น่าเบื่อ มี Mood & Tone สีไม้ละมุนตา เน้นความโปร่ง โล่ง สบาย ให้ความรู้สึกเหมือนได้มาผ่อนคลายและเป็นส่วนตัว", 
-      en: "An interior design project in Phetchaburi with a 'Modern Muji' concept for a house that desires simplicity without being boring. Featuring a soft wood Mood & Tone, emphasizing an airy, open, and comfortable atmosphere, giving a sense of relaxation and privacy." 
+      en: "An interior design project in Phetchaburi guided by a 'Modern Muji' concept. It features a soft wood mood and tone, emphasizing an airy and open layout that offers a true sense of relaxation and privacy." 
     },
     details: {
-      th: "เปลี่ยนบ้านธรรมดาให้เป็น Safe Zone... ในมู้ดญี่ปุ่นที่แสนอบอุ่น\n\nนี้โปรเจกต์ออกแบบภายในที่เพชรบุรีครับ กับโจทย์ 'Modern Muji' สำหรับบ้าน ที่ต้องการความเรียบง่าย แต่ไม่น่าเบื่อ มี Mood & Tone สีไม้ละมุนตา เน้นความโปร่ง โล่ง สบาย ให้ความรู้สึกเหมือนได้มาผ่อนคลายและเป็นส่วนตัว",
-      en: "Transforming an ordinary house into a personal sanctuary... wrapped in a warm Japanese aesthetic.\n\nIntroducing our latest interior design project in Phetchaburi. The brief was 'Modern Muji' creating a home that is minimalist yet far from monotonous. We utilized a palette of soft, soothing wood tones to prioritize an open, airy atmosphere, resulting in a space that feels genuinely private and relaxing."
+      th: "เปลี่ยนบ้านธรรมดาให้เป็น Safe Zone... ในมู้ดญี่ปุ่นที่แสนอบอุ่น\n\nนี่คือโปรเจกต์ออกแบบภายในที่เพชรบุรีครับ กับโจทย์ 'Modern Muji' สำหรับบ้าน ที่ต้องการความเรียบง่าย แต่ไม่น่าเบื่อ มี Mood & Tone สีไม้ละมุนตา เน้นความโปร่ง โล่ง สบาย ให้ความรู้สึกเหมือนได้มาผ่อนคลายและเป็นส่วนตัว",
+      en: "Turning an ordinary house into a personal safe zone with a warm Japanese touch.\n\nThis is an interior design project in Phetchaburi guided by a 'Modern Muji' brief. The goal was simplicity without monotony. Using a soft, soothing wood palette, we emphasized an open, airy, and comfortable atmosphere, creating a space that feels deeply relaxing and private."
     },
     gallery: [
       "assets/BaanSapsiri_IN/โฟเย.png",
@@ -236,11 +236,11 @@ const realWorksData = [
     title: { th: "Kouprey_SSK", en: "Kouprey_SSK" },
     desc: {
       th: "ร้านอาหารและคราฟเบียร์สไตล์ลอฟท์ อินดัสเทรียล โปร่งโล่ง เหมาะสำหรับการนั่งชิลล์ยามเย็น",
-      en: "A loft-industrial style restaurant and craft beer bar, designed with high ceilings for an airy and relaxing evening atmosphere."
+      en: "A loft-industrial restaurant and craft beer bar with high ceilings, creating an airy and relaxing atmosphere for evening hangouts."
     },
     details: {
       th: "ร้านอาหารและคราฟเบียร์ได้แรงบันดาลใจมาจาก สัตว์ขึ้นชื่อและดอกไม้ประจำจังหวัด นำมาปรับเข้ากับสไตล์ลอฟท์ อินดัสเทรียลเพื่อให้ร้านเหมาะสำหรับการนั่งทานเบียร์และอาหารตอนเย็น สเปซที่สูงภายในร้านช่วยให้ร้านดูไม่อึดอัด",
-      en: "This restaurant and craft beer venue draws inspiration from the province's famous animals and flowers, adapted into a loft-industrial style perfectly suited for enjoying evening beers and dining. The high interior space ensures the venue feels airy and unconfined."
+      en: "Inspired by the province's iconic local fauna and flora, this restaurant and craft beer venue has been designed in a loft-industrial style perfectly tailored for evening dining and drinks. The high interior ceilings ensure the space feels expansive and unconfined."
     },
     gallery: [
       "assets/Kouprey_SSK/22.jpg",
@@ -263,11 +263,11 @@ const realWorksData = [
     title: { th: "APT_K1_CNX", en: "APT_K1_CNX" },
     desc: {
       th: "อพาร์ตเมนต์อาคารแฝดสไตล์ Modern Brutalist โชว์สัจจะวัสดุ พร้อมสเปซส่วนกลางเชื่อมต่อคอมมูนิตี้",
-      en: "A twin-building apartment in Modern Brutalist style, showcasing raw materials with a central communal space connecting the two buildings."
+      en: "A twin-building apartment designed in a Modern Brutalist style, celebrating the truth of materials and featuring a central communal space that connects the two structures."
     },
     details: {
       th: "อาคารแฝดที่ใช้คอนเซปต์ โมเดิร์น บรูทัลลิสต์ (Modern Brutalist) เพื่อให้ตัวอาคารไม่ตกยุคสมัย โดยใช้สัจจะวัสดุ และมีสเปซส่วนกลางที่เชื่อมระหว่าง 2 อาคารเข้าหากัน เป็นทั้งคอมมูนิตี้และพื้นที่พักผ่อน",
-      en: "A twin-building project utilizing a Modern Brutalist concept to ensure the architecture remains timeless. The design embraces truth to materials and features a central space bridging the two buildings, serving as both a community hub and a relaxation area."
+      en: "A twin-building project driven by a Modern Brutalist concept to ensure the architecture remains timeless. By embracing the raw truth of materials and designing a central space that bridges the two buildings, we created a seamless community hub and relaxation area."
     },
     gallery: [
       "assets/APT_K1_CNX/1.jpg",
@@ -293,7 +293,7 @@ const teamData = [
     },
     exp: { 
       th: "ผมหลงใหลในการออกแบบสไตล์ Contemporary และ Industrial โดยเน้นการใช้ 'สัจจะวัสดุ' (การโชว์เนื้อแท้ของ ปูน ไม้ อิฐ เหล็ก) เพื่อดึงความสวยงามของวัสดุธรรมชาติออกมาให้มากที่สุด หากคุณชอบบ้านที่ดูดิบ เท่ แต่อบอุ่น และที่สำคัญคือ \"ตอบโจทย์การใช้ชีวิตจริง\" ผมยินดีเป็นเพื่อนคู่คิดให้ครับ", 
-      en: "I am passionate about Contemporary and Industrial design, emphasizing 'truth to materials' (showcasing the raw essence of concrete, wood, brick, and steel) to draw out their natural beauty. If you love homes that are raw, cool, yet warm, and most importantly 'fit your real lifestyle', I would be glad to be your design partner." 
+      en: "I am deeply passionate about Contemporary and Industrial design, with a strong emphasis on 'truth to materials'—showcasing the raw essence of concrete, wood, brick, and steel to highlight their natural beauty. If you appreciate homes that are raw and edgy yet inherently warm, and most importantly, tailored to your real lifestyle, I would be honored to be your design partner." 
     }
   },
   {
@@ -309,7 +309,7 @@ const teamData = [
     },
     exp: { 
       th: "ผู้ก่อตั้ง ถาปัตเฉพาะกิจ เชี่ยวชาญการวางปรัชญาสถาปัตยกรรมมินิมอล โครงสร้างคอนกรีตเปลือย และการอยู่อาศัยยั่งยืน", 
-      en: "Founder of Thapat Chaphokit. Specialist in brutalist minimalist philosophy, raw concrete structures, and sustainable living." 
+      en: "Founder of Thapat Chaphokit. Specializes in minimalist architectural philosophies, exposed concrete structures, and sustainable living solutions." 
     }
   },
   {
@@ -325,7 +325,7 @@ const teamData = [
     },
     exp: { 
       th: "ผู้อำนวยการฝ่ายออกแบบ เชี่ยวชาญมิติทางสเปซ (Spatial Flow), แสงและเงา รวมถึงการเลือกสรรวัสดุระดับพรีเมียม", 
-      en: "Design Director specializing in spatial flow, architectural lighting, shadow rhythm, and high-end material selection." 
+      en: "Design Director specializing in spatial flow, the interplay of light and shadow, and the curation of premium materials." 
     }
   }
 ];
