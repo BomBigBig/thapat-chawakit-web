@@ -7,38 +7,6 @@ let activeCategory = 'all';
 let activeProjectId = null;
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Preloader Logic
-  const preloader = document.getElementById('preloader');
-  if (preloader) {
-    // Wait for minimum time to show animation, plus page load
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        preloader.classList.add('fade-out');
-        setTimeout(() => { preloader.style.display = 'none'; }, 800);
-      }, 500);
-    });
-  }
-
-  // Scroll Reveal Logic (Intersection Observer)
-  window.revealObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.15
-  });
-
-  const revealElements = document.querySelectorAll('.reveal-on-scroll');
-  if (revealElements.length > 0) {
-    revealElements.forEach(el => window.revealObserver.observe(el));
-  }
-
-
   initLanguageSwitcher();
   initMobileMenu();
   initHeroBgSlider();
@@ -111,20 +79,30 @@ function initProcessImageSlider() {
     currentStep = index;
   }
 
-  // Removed auto-cycle to prevent layout jumping
-  // User must click or hover to change steps
+  function startAutoCycle() {
+    clearInterval(autoTimer);
+    autoTimer = setInterval(() => {
+      const nextIndex = (currentStep + 1) % slides.length;
+      setActiveStep(nextIndex);
+    }, 4000);
+  }
 
+  // Hovering on right step card triggers that step image immediately
   cards.forEach((card, index) => {
     card.addEventListener('mouseenter', () => {
+      clearInterval(autoTimer);
       setActiveStep(index);
     });
-    // No mouseleave event to restart auto-cycle
+    card.addEventListener('mouseleave', () => {
+      startAutoCycle();
+    });
     card.addEventListener('click', () => {
       setActiveStep(index);
     });
   });
 
   setActiveStep(0);
+  startAutoCycle();
 }
 
 /* --------------------------------------------------------------------------
@@ -194,7 +172,7 @@ function renderProjects(category) {
     const learnText = translations[currentLang].cta_start_project;
 
     return `
-      <article class="project-list-item reveal-on-scroll" onclick="openProjectModal('${p.id}')">
+      <article class="project-list-item">
         <div class="project-list-info">
           <h3 class="project-list-title">${title}</h3>
           <div class="project-list-meta">
@@ -203,22 +181,17 @@ function renderProjects(category) {
             <span class="meta-label">LOCATION</span>
             <span class="meta-value">${p.specs && p.specs[2] ? p.specs[2] : 'Thailand'}</span>
           </div>
-          <span class="project-list-link">VIEW DETAILS ↗</span>
+          <a href="javascript:void(0)" class="project-list-link" onclick="openProjectModal('${p.id}')">
+            VIEW DETAILS ↗
+          </a>
         </div>
-        <div class="project-list-desc">
-          <p>${desc}</p>
-        </div>
-        <div class="project-list-images">
-          <img src="${p.gallery && p.gallery.length > 0 ? encodeURI(p.gallery[0]) : encodeURI(p.image)}" alt="${title}" loading="lazy" />
+        <div class="project-list-images" onclick="openProjectModal('${p.id}')">
+          <img src="${p.gallery && p.gallery.length > 0 ? encodeURI(p.gallery[0]) : encodeURI(p.image)}" alt="${title} view 1" loading="lazy" />
+          <img src="${p.gallery && p.gallery.length > 1 ? encodeURI(p.gallery[1]) : encodeURI(p.image)}" alt="${title} view 2" loading="lazy" />
         </div>
       </article>
     `;
   }).join('');
-
-  // Re-observe dynamically added reveal elements
-  if (window.revealObserver) {
-    container.querySelectorAll('.reveal-on-scroll').forEach(el => window.revealObserver.observe(el));
-  }
 }
 
 // Global Filter Helper
@@ -305,22 +278,6 @@ function renderTeam() {
               <div>
                 <h5 class="value-head">${t.val_2_title}</h5>
                 <p class="value-desc">${t.val_2_desc}</p>
-              </div>
-            </div>
-            
-            <div class="value-item">
-              <span class="value-num">03</span>
-              <div>
-                <h5 class="value-head">${t.val_3_title}</h5>
-                <p class="value-desc">${t.val_3_desc}</p>
-              </div>
-            </div>
-
-            <div class="value-item">
-              <span class="value-num">04</span>
-              <div>
-                <h5 class="value-head">${t.val_4_title}</h5>
-                <p class="value-desc">${t.val_4_desc}</p>
               </div>
             </div>
           </div>
@@ -514,24 +471,3 @@ function initScrollAnimations() {
     observer.observe(el);
   });
 }
-
-/* --------------------------------------------------------------------------
-   FLOATING CONTACT MENU
-   -------------------------------------------------------------------------- */
-document.addEventListener('DOMContentLoaded', () => {
-  const floatingBtn = document.getElementById('floating-btn');
-  const floatingWrapper = document.querySelector('.floating-contact-wrapper');
-  
-  if (floatingBtn && floatingWrapper) {
-    floatingBtn.addEventListener('click', () => {
-      floatingWrapper.classList.toggle('active');
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-      if (!floatingWrapper.contains(e.target)) {
-        floatingWrapper.classList.remove('active');
-      }
-    });
-  }
-});

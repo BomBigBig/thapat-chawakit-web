@@ -6,29 +6,18 @@
   <title>ถาปัตเฉพาะกิจ — THAPAT CHAPHOKIT | Architectural Collective</title>
   <meta name="description" content="การรวมตัวของกลุ่มสถาปนิกอิสระที่มุ่งมั่นออกแบบบ้านด้วยหัวใจ สร้างสถาปัตยกรรมระดับโลกที่เป็นเอกลักษณ์เฉพาะตัว">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/styles.css?v=nocache99">
+  <link rel="stylesheet" href="css/styles.css?v=nocache12">
 </head>
 <body>
-  <!-- ==========================================
-       PRELOADER
-       ========================================== -->
-  <div id="preloader" class="preloader">
-    <div class="preloader-content">
-      <img src="assets/logo.png" alt="Thapat Chaphokit" class="preloader-logo-img" />
-      <div class="preloader-bar"><div class="preloader-progress"></div></div>
-    </div>
-  </div>
+
   <!-- ==========================================
        NAVIGATION BAR & LANGUAGE SWITCHER
        ========================================== -->
   <nav class="navbar">
-    <a href="#" class="nav-brand">
-      <img src="assets/logo.png" alt="Thapat Chaphokit" class="nav-logo-img" />
-      <div class="nav-brand-text">
-        <span class="brand-logo" data-i18n="brand_name">ถาปัตเฉพาะกิจ</span>
-        <span class="brand-tag" data-i18n="brand_sub">THAPAT CHAPHOKIT</span>
-      </div>
-    </a>
+    <div class="nav-brand">
+      <span class="brand-logo" data-i18n="brand_name">ถาปัตเฉพาะกิจ</span>
+      <span class="brand-tag" data-i18n="brand_sub">THAPAT CHAPHOKIT</span>
+    </div>
 
     <button class="mobile-menu-toggle" aria-label="Toggle navigation">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -43,7 +32,7 @@
         <li><a href="#home" data-i18n="nav_home">หน้าหลัก</a></li>
         <li><a href="#about" data-i18n="nav_about">เรื่องราวของเรา</a></li>
         <li><a href="#process" data-i18n="nav_process">ขั้นตอนการทำงาน</a></li>
-        <li><a href="#projects" data-i18n="nav_projects">โปรเจกต์</a></li>
+        <li><a href="#projects" data-i18n="nav_projects">ผลงานสถาปัตยกรรม</a></li>
         <li><a href="#team" data-i18n="nav_team">ทีมสถาปนิก</a></li>
       </ul>
 
@@ -61,8 +50,6 @@
        NEW HERO BANNER FULL (Dynamic Background Photo Slider + Overlapping White Text)
        ========================================== -->
   <header id="home" class="hero-banner-full">
-    <div class="shape-element circle bg-orange shape-hero-1"></div>
-    <div class="shape-element square bg-blue shape-hero-2"></div>
     
     <!-- Dynamic Full Background Photo Slider (Real Work Renders) -->
     <div class="hero-bg-slider">
@@ -101,10 +88,7 @@
   <!-- ==========================================
        WORK PROCESS SECTION (DIRECTLY BELOW THAPAT CHAPHOKIT - MATCHING SCREENSHOT)
        ========================================== -->
-  <section id="about" class="section-vision reveal-on-scroll">
-    <div class="shape-element square bg-beige shape-about-1"></div>
-    <div class="shape-element circle bg-green shape-about-2"></div>
-    <img src="assets/deco1.png" class="deco-element deco-1" alt="" aria-hidden="true">
+  <section id="about" class="section-vision">
     <div class="vision-editorial-container">
       
       <!-- Split Services & Vision Layout -->
@@ -177,10 +161,7 @@
   <!-- ==========================================
        OUR VISION OF BESPOKE LIVING (Frameless Editorial Typography - Dynamic i18n)
        ========================================== -->
-  <section id="process" class="section-process reveal-on-scroll">
-    <div class="shape-element circle bg-blue shape-process-1"></div>
-    <div class="shape-element square bg-orange shape-process-2"></div>
-    <img src="assets/deco2.png" class="deco-element deco-2" alt="" aria-hidden="true">
+  <section id="process" class="section-process">
     <div class="process-header">
       <div class="section-index" data-i18n="section_process_num">[PROCESS]</div>
       <h2 class="process-title" data-i18n="section_process_title">ขั้นตอนการทำงานของเรา (จากความฝัน สู่บ้านจริง)</h2>
@@ -213,15 +194,21 @@
             </div>
           </div>
           <div class="process-step-slide" data-step="4">
-            <img src="assets/process_step_5.jpg" alt="Step 4: Blueprints & BOQ" class="process-step-img" />
+            <img src="assets/process_step_4.jpg" alt="Step 4: Blueprints & BOQ" class="process-step-img" />
             <div class="process-step-overlay">
               <span class="process-img-badge">[ STEP 04 // CONSTRUCTION DOCUMENTS & BOQ ]</span>
             </div>
           </div>
           <div class="process-step-slide" data-step="5">
-            <img src="assets/process_step_6.jpg" alt="Step 5: Building Permits Application" class="process-step-img" />
+            <img src="assets/process_step_5.jpg" alt="Step 5: Building Permits Application" class="process-step-img" />
             <div class="process-step-overlay">
               <span class="process-img-badge">[ STEP 05 // BUILDING PERMITS APPLICATION ]</span>
+            </div>
+          </div>
+          <div class="process-step-slide" data-step="6">
+            <img src="assets/process_step_6.jpg" alt="Step 6: Construction Site Inspection" class="process-step-img" />
+            <div class="process-step-overlay">
+              <span class="process-img-badge">[ STEP 06 // BIDDING & CONSTRUCTION OBSERVATION ]</span>
             </div>
           </div>
         </div>
@@ -239,9 +226,6 @@
             <div class="step-card-highlight" data-i18n="step1_care">
               ความใส่ใจพิเศษ: ผมจะลงพื้นที่ไปดูที่ดินจริงของคุณในเชียงใหม่ เพื่อดูทิศทางลม แดด วิวรอบข้าง และบริบทของชุมชน เพื่อนำมาออกแบบบ้านให้เหมาะกับที่ดินแปลงนี้ที่สุด
             </div>
-            <div class="step-card-highlight" data-i18n="step1_goal" style="margin-top: 0.5rem; background-color: var(--color-orange); color: white;">
-              เป้าหมาย: เข้าใจตัวคุณและที่ดิน ก่อนเริ่มออกแบบ
-            </div>
           </div>
         </div>
 
@@ -251,7 +235,7 @@
           <div class="step-card-content">
             <h3 class="step-card-title" data-i18n="step2_title">ขั้นที่ 2: วางแนวคิดและออกแบบร่างเบื้องต้น (Conceptual & Schematic Design)</h3>
             <p class="step-card-desc" data-i18n="step2_do">ทำอะไร: นำข้อมูลทั้งหมดมาวิเคราะห์ และจัดทำเป็น "แบบร่างเบื้องต้น" (ผังพื้นห้องต่างๆ) พร้อมนำเสนอสไตล์บ้าน (Mood & Tone)</p>
-            <div class="step-card-highlight" data-i18n="step2_goal" style="background-color: #3D5A80; color: white;">
+            <div class="step-card-highlight" data-i18n="step2_goal">
               เป้าหมาย: เพื่อให้เราเห็นภาพตรงกันว่า การจัดวางฟังก์ชันใช้งานและหน้าตาบ้านไปในทิศทางที่คุณชอบหรือไม่ (ขั้นตอนนี้สามารถปรับแก้ได้จนกว่าจะลงตัว)
             </div>
           </div>
@@ -263,7 +247,7 @@
           <div class="step-card-content">
             <h3 class="step-card-title" data-i18n="step3_title">ขั้นที่ 3: พัฒนาแบบและจัดทำภาพ 3 มิติ (Design Development & 3D)</h3>
             <p class="step-card-desc" data-i18n="step3_do">ทำอะไร: เมื่อผังพื้นลงตัวแล้ว ผมจะพัฒนาแบบให้เป็นภาพ 3 มิติ (3D Perspective) ทั้งภายนอกและภายใน (เบื้องต้น)</p>
-            <div class="step-card-highlight" data-i18n="step3_goal" style="background-color: #293241; color: white;">
+            <div class="step-card-highlight" data-i18n="step3_goal">
               เป้าหมาย: ให้คุณได้เห็นหน้าตาบ้านเสมือนจริงก่อนลงมือก่อสร้าง วัสดุที่จะใช้ สีสันต่างๆ เพื่อให้มั่นใจว่านี่คือบ้านในฝันของคุณจริงๆ
             </div>
           </div>
@@ -275,7 +259,7 @@
           <div class="step-card-content">
             <h3 class="step-card-title" data-i18n="step4_title">ขั้นที่ 4: จัดทำแบบก่อสร้างและราคากลาง (Construction Documents & BOQ)</h3>
             <p class="step-card-desc" data-i18n="step4_do">ทำอะไร: นำแบบที่สรุปแล้วมาเขียนเป็น "แบบก่อสร้างที่สมบูรณ์" (พิมพ์เขียว) ที่ระบุรายละเอียดสถาปัตยกรรมและวิศวกรรมครบถ้วน พร้อมกับทำ "ใบประเมินราคากลาง (BOQ)"</p>
-            <div class="step-card-highlight" data-i18n="step4_goal" style="background-color: #985236; color: white;">
+            <div class="step-card-highlight" data-i18n="step4_goal">
               เป้าหมาย: ช่างจะได้มีแบบที่ชัดเจนในการทำงาน ลดข้อผิดพลาดหน้างาน และคุณสามารถใช้ BOQ เพื่อคุมงบประมาณ ใช้เปรียบเทียบราคาผู้รับเหมา หรือใช้ยื่นกู้ธนาคารได้
             </div>
           </div>
@@ -287,8 +271,20 @@
           <div class="step-card-content">
             <h3 class="step-card-title" data-i18n="step5_title">ขั้นที่ 5: จัดเตรียมเอกสารยื่นขออนุญาตก่อสร้าง (Permits Application)</h3>
             <p class="step-card-desc" data-i18n="step5_do">ทำอะไร: ผมจะช่วยดูแลจัดทำเอกสารและแบบฟอร์มต่างๆ ที่จำเป็นสำหรับการยื่นขออนุญาตก่อสร้างกับทางเทศบาลหรือ อบต. ในพื้นที่</p>
-            <div class="step-card-highlight" data-i18n="step5_goal" style="background-color: #556B2F; color: white;">
+            <div class="step-card-highlight" data-i18n="step5_goal">
               เป้าหมาย: เพื่อให้คุณได้แบบบ้านที่ถูกต้องตามกฎหมายควบคุมอาคารและระยะร่นต่างๆ สบายใจหายห่วง
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="process-step-card" data-step-index="5">
+          <span class="step-number-badge">06.</span>
+          <div class="step-card-content">
+            <h3 class="step-card-title" data-i18n="step6_title">ขั้นที่ 6: คัดเลือกผู้รับเหมาและให้คำปรึกษาระหว่างก่อสร้าง (Bidding & Construction Observation)</h3>
+            <p class="step-card-desc" data-i18n="step6_do">ทำอะไร: ให้คำแนะนำในการเลือกผู้รับเหมา และลงพื้นที่ไปดูหน้างานเป็นระยะๆ (ตามที่ตกลงกัน)</p>
+            <div class="step-card-highlight" data-i18n="step6_goal">
+              เป้าหมาย: เพื่อตรวจสอบว่าช่างทำงานได้ตรงตามแบบและสัดส่วนที่ออกแบบไว้หรือไม่ พร้อมช่วยแก้ปัญหาหน้างานหากมีเหตุสุดวิสัย จนกว่าบ้านจะสร้างเสร็จสมบูรณ์
             </div>
           </div>
         </div>
@@ -301,10 +297,7 @@
   <!-- ==========================================
        SECTION [02] - INAUGURAL BESPOKE PROJECTS (Artistic Dashed Canvas)
        ========================================== -->
-  <section id="projects" class="section-portfolio reveal-on-scroll">
-    <div class="shape-element square bg-green shape-projects-1"></div>
-    <div class="shape-element circle bg-beige shape-projects-2"></div>
-    <img src="assets/deco3.png" class="deco-element deco-3" alt="" aria-hidden="true">
+  <section id="projects" class="section-portfolio">
     <div class="section-index" data-i18n="section_02_num">[02]</div>
 
     <div id="projects-container" class="projects-feed"></div>
@@ -313,9 +306,7 @@
   <!-- ==========================================
        SECTION [03] - ARCHITECT COLLECTIVE TEAM (Split Layout)
        ========================================== -->
-  <section id="team" class="section-team reveal-on-scroll">
-    <div class="shape-element circle bg-orange shape-team-1"></div>
-    <div class="shape-element square bg-blue shape-team-2"></div>
+  <section id="team" class="section-team">
     <div class="section-index" data-i18n="section_03_num">[03]</div>
     <h2 class="portfolio-title" data-i18n="section_03_title">ทีมสถาปนิกเฉพาะกิจ</h2>
     <p style="color: var(--text-muted); margin-top: 0.5rem;" data-i18n="section_03_sub">
@@ -331,8 +322,7 @@
   <!-- ==========================================
        SECTION [04] - CONTACT & INQUIRY FORM
        ========================================== -->
-  <section id="contact" class="section-contact reveal-on-scroll">
-    <img src="assets/deco4.png" class="deco-element deco-4" alt="" aria-hidden="true">
+  <section id="contact" class="section-contact">
     <div class="section-index" data-i18n="section_04_num">[04]</div>
 
     <div class="contact-grid">
@@ -345,19 +335,16 @@
             <li><a href="#home" data-i18n="nav_home">หน้าหลัก</a></li>
             <li><a href="#process" data-i18n="nav_process">ขั้นตอนการทำงาน</a></li>
             <li><a href="#about" data-i18n="nav_about">เรื่องราวของเรา</a></li>
-            <li><a href="#projects" data-i18n="nav_projects">โปรเจกต์</a></li>
+            <li><a href="#projects" data-i18n="nav_projects">ผลงานสถาปัตยกรรม</a></li>
             <li><a href="#team" data-i18n="nav_team">ทีมสถาปนิก</a></li>
           </ul>
         </div>
 
         <div class="contact-direct">
           <a href="mailto:saanstudio.contact@gmail.com" class="contact-email">saanstudio.contact@gmail.com</a>
-          <a href="tel:0911317205" class="contact-phone-bottom" style="text-decoration: none;">091-131-7205</a>
-          <a href="https://web.facebook.com/profile.php?id=61576745572502" target="_blank" style="display: inline-block; margin-top: 1rem; color: var(--text-dark); text-decoration: none; font-weight: 500; font-size: 1.1rem; border-bottom: 1px solid currentColor; padding-bottom: 2px;">
-            Facebook: ถาปัตเฉพาะกิจ ↗
-          </a>
-          <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2rem;" data-i18n="footer_copyright">
-            © 2026 ถาปัตเฉพาะกิจ. ออกแบบเพื่อให้ที่อยู่อาศัยเป็นหนึ่งกับชีวิต
+          <span class="contact-phone-bottom">091-131-7205</span>
+          <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 1rem;" data-i18n="footer_copyright">
+            © 2026 ถาปัตเฉพาะกิจ. ออกแบบเพื่อให้ชีวิตเป็นหนึ่งเดียวกับธรรมชาติ.
           </p>
         </div>
       </div>
@@ -403,19 +390,6 @@
   </section>
 
   <!-- ==========================================
-       MASSIVE FOOTER
-       ========================================== -->
-  <section class="massive-footer reveal-on-scroll">
-    <div class="footer-content">
-      <a href="#contact" class="footer-cta-link" data-i18n="footer_cta">START A PROJECT</a>
-      <div class="footer-bottom">
-        <span class="copyright">© 2026 Thapat Chaphokit. All rights reserved.</span>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================
        INTERACTIVE PROJECT DETAIL MODAL
        ========================================== -->
   <div id="project-modal" class="fullscreen-overlay" style="display: none;">
@@ -452,37 +426,14 @@
   <!-- ==========================================
        FLOATING CONTACT BUTTON
        ========================================== -->
-  <div class="floating-contact-wrapper">
-    <div class="floating-contact-menu" id="floating-menu">
-      <a href="https://web.facebook.com/profile.php?id=61576745572502" target="_blank" class="floating-menu-item facebook-item" aria-label="Facebook">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2.039C6.5 2.039 2 6.539 2 12c0 5.084 3.712 9.296 8.583 9.948v-7.039h-2.582V12h2.582V9.585c0-2.544 1.517-3.953 3.844-3.953 1.111 0 2.274.199 2.274.199v2.5h-1.282c-1.261 0-1.654.783-1.654 1.586V12h2.836l-.453 2.909h-2.383v7.039C18.288 21.296 22 17.084 22 12c0-5.461-4.5-9.961-10-9.961z"/>
-        </svg>
-      </a>
-      <a href="mailto:saanstudio.contact@gmail.com" class="floating-menu-item email-item" aria-label="Email">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>
-        </svg>
-      </a>
-      <a href="tel:0911317205" class="floating-menu-item phone-item" aria-label="Phone">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-        </svg>
-      </a>
-    </div>
-    <button class="floating-contact-btn" id="floating-btn" aria-label="Contact Us">
-      <svg class="icon-chat" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-      </svg>
-      <svg class="icon-close" style="display: none;" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="18" y1="6" x2="6" y2="18"></line>
-        <line x1="6" y1="6" x2="18" y2="18"></line>
-      </svg>
-    </button>
-  </div>
+  <a href="#contact" class="floating-contact-btn" aria-label="Contact Us">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+    </svg>
+  </a>
 
   <!-- JavaScript Scripts -->
-  <script src="js/translations.js?v=nocache99"></script>
-  <script src="js/main.js?v=nocache99"></script>
+  <script src="js/translations.js?v=nocache32"></script>
+  <script src="js/main.js?v=nocache32"></script>
 </body>
 </html>
