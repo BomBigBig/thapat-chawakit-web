@@ -294,16 +294,16 @@ const teamData = [
     id: "tonkla",
     image: "assets/team_tonkla.jpg",
     name: { 
-      th: "Mr. Jakkrit Kurasee (Tonkla)", 
+      th: "จักรกฤษณ์ ขุราษี (กล้า)", 
       en: "Mr. Jakkrit Kurasee (Tonkla)" 
     },
     role: { 
-      th: "Co-Founder & Residential Architect (สถาปนิกคนซ้าย)", 
-      en: "Co-Founder & Residential Architect (Left)" 
+      th: "สถาปนิก", 
+      en: "Architect" 
     },
     exp: { 
-      th: "ผมหลงใหลในการออกแบบสไตล์ Contemporary และ Industrial โดยเน้นการใช้ 'สัจจะวัสดุ' (การโชว์เนื้อแท้ของ ปูน ไม้ อิฐ เหล็ก) เพื่อดึงความสวยงามของวัสดุธรรมชาติออกมาให้มากที่สุด หากคุณชอบบ้านที่ดูดิบ เท่ แต่อบอุ่น และที่สำคัญคือ \"ตอบโจทย์การใช้ชีวิตจริง\" ผมยินดีเป็นเพื่อนคู่คิดให้ครับ", 
-      en: "I am deeply passionate about Contemporary and Industrial design, with a strong emphasis on 'truth to materials'—showcasing the raw essence of concrete, wood, brick, and steel to highlight their natural beauty. If you appreciate homes that are raw and edgy yet inherently warm, and most importantly, tailored to your real lifestyle, I would be honored to be your design partner." 
+      th: "ผู้เชี่ยวชาญด้านการออกแบบสไตล์ Contemporary และ Industrial และการเลือกใช้วัสดุในการออกแบบให้เข้ากับบริบทของตัวอาคาร", 
+      en: "Expert in Contemporary and Industrial design, specializing in material selection that perfectly complements the building's context." 
     }
   },
   {
