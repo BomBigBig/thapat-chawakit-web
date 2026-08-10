@@ -2605,8 +2605,9 @@ button {
   opacity: 0.85;
 }
 
-.section-vision, .section-process, .section-portfolio, .section-contact {
+.section-vision, .section-process, .section-portfolio, .section-contact, .section-team, .hero-banner-full {
   position: relative;
+  overflow-x: hidden;
 }
 
 .deco-1 {
