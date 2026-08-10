@@ -63,6 +63,7 @@ html, body {
   color: var(--text-main);
   line-height: 1.6;
   width: 100%;
+  overflow-x: hidden;
 }
 
 /* Typography Utility */
