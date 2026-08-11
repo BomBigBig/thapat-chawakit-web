@@ -49,6 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   initScrollAnimations();
   
+  if (typeof gsap !== 'undefined') {
+    initCreativeAnimations();
+  }
+  
   // Set default language on load to override hardcoded HTML
   setLanguage(currentLang);
 });
@@ -535,3 +539,152 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+/* --------------------------------------------------------------------------
+   CREATIVE GSAP ANIMATIONS (Shapes, Parallax, Mask Reveals)
+   -------------------------------------------------------------------------- */
+function initCreativeAnimations() {
+  // 1. Continuous Floating (Sine Wave) for Shapes
+  const shapes = document.querySelectorAll('.shape-element, .deco-element');
+  shapes.forEach(shape => {
+    // Randomize duration and y-distance for organic feel
+    const randomDuration = 3 + Math.random() * 2;
+    const randomY = 15 + Math.random() * 15;
+    
+    gsap.to(shape, {
+      y: `+=${randomY}`,
+      duration: randomDuration,
+      ease: "sine.inOut",
+      yoyo: true,
+      repeat: -1
+    });
+  });
+
+  // 2. Scroll Parallax for Shapes
+  // Register ScrollTrigger
+  gsap.registerPlugin(ScrollTrigger);
+  
+  shapes.forEach(shape => {
+    const speed = shape.classList.contains('circle') ? -50 : 50; // Some move up, some move down
+    
+    gsap.to(shape, {
+      yPercent: speed,
+      ease: "none",
+      scrollTrigger: {
+        trigger: shape,
+        start: "top bottom", 
+        end: "bottom top",
+        scrub: true
+      }
+    });
+  });
+
+  // 3. Text Mask Reveals (Rising Text)
+  const titles = document.querySelectorAll('.hero-title-main, .hero-title-sub, .section-title, .story-title');
+  titles.forEach(title => {
+    // Initial state: hidden via clip-path
+    gsap.set(title, { 
+      clipPath: 'polygon(0 100%, 100% 100%, 100% 100%, 0 100%)',
+      y: 40
+    });
+
+    gsap.to(title, {
+      clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+      y: 0,
+      duration: 1.2,
+      ease: "power4.out",
+      scrollTrigger: {
+        trigger: title,
+        start: "top 85%",
+      }
+    });
+  });
+
+  // 4. Upgrade #process Interactions
+  const processCards = document.querySelectorAll('.process-step-card');
+  const processImages = document.querySelectorAll('.process-step-slide');
+  const processDeco = document.querySelector('.section-process .deco-element');
+
+  processCards.forEach((card, index) => {
+    card.addEventListener('mouseenter', () => {
+      // Scale down image slightly for depth
+      const activeImg = processImages[index];
+      if (activeImg) {
+        gsap.fromTo(activeImg, 
+          { scale: 1.05 }, 
+          { scale: 1, duration: 0.8, ease: "power2.out" }
+        );
+      }
+      
+      // Pop the deco shape
+      if (processDeco) {
+        gsap.fromTo(processDeco,
+          { scale: 0.8, rotation: -10 },
+          { scale: 1, rotation: 0, duration: 0.6, ease: "back.out(1.7)" }
+        );
+      }
+    });
+  });
+
+  // 5. Custom Interactive Cursor (Desktop Only)
+  if (window.innerWidth > 768) {
+    const cursor = document.createElement('div');
+    cursor.classList.add('custom-cursor');
+    document.body.appendChild(cursor);
+
+    gsap.set(cursor, { xPercent: -50, yPercent: -50 });
+
+    const pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+    const mouse = { x: pos.x, y: pos.y };
+    const speed = 0.2;
+
+    const xSet = gsap.quickSetter(cursor, "x", "px");
+    const ySet = gsap.quickSetter(cursor, "y", "px");
+
+    window.addEventListener("pointermove", e => {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+    });
+
+    gsap.ticker.add(() => {
+      // Lerp for smooth following
+      const dt = 1.0 - Math.pow(1.0 - speed, gsap.ticker.deltaRatio());
+      pos.x += (mouse.x - pos.x) * dt;
+      pos.y += (mouse.y - pos.y) * dt;
+      xSet(pos.x);
+      ySet(pos.y);
+    });
+
+    // Cursor Hover States
+    const interactables = document.querySelectorAll('a, button, .project-list-item, .architect-hotspot');
+    interactables.forEach(el => {
+      el.addEventListener('mouseenter', () => cursor.classList.add('active'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('active'));
+    });
+    
+    // Magnetic Buttons
+    const magnets = document.querySelectorAll('.floating-contact-btn, .lang-btn');
+    magnets.forEach(btn => {
+      btn.addEventListener('mousemove', (e) => {
+        const rect = btn.getBoundingClientRect();
+        const h = rect.width / 2;
+        const x = e.clientX - rect.left - h;
+        const y = e.clientY - rect.top - h;
+        gsap.to(btn, {
+          x: x * 0.4,
+          y: y * 0.4,
+          duration: 0.4,
+          ease: "power2.out"
+        });
+      });
+      btn.addEventListener('mouseleave', () => {
+        gsap.to(btn, {
+          x: 0,
+          y: 0,
+          duration: 0.7,
+          ease: "elastic.out(1, 0.3)"
+        });
+      });
+    });
+  }
+}

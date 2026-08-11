@@ -2742,3 +2742,41 @@ button {
   .shape-element { display: none; } /* Hide these small shapes on mobile to keep it clean */
 }
 
+/* ==========================================
+   CUSTOM INTERACTIVE CURSOR
+   ========================================== */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background-color: var(--accent-orange);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              height 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              background-color 0.3s ease,
+              border 0.3s ease;
+  mix-blend-mode: difference;
+}
+
+/* Hover state for links and interactables */
+.custom-cursor.active {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid var(--accent-orange);
+}
+
+/* Hide default cursor only on non-touch devices */
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+  a, button, .project-list-item, .architect-hotspot {
+    cursor: none !important;
+  }
+}
