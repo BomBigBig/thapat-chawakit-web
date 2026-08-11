@@ -2771,12 +2771,3 @@ button {
   border: 1px solid var(--accent-orange);
 }
 
-/* Hide default cursor only on non-touch devices */
-@media (pointer: fine) {
-  body {
-    cursor: none;
-  }
-  a, button, .project-list-item, .architect-hotspot {
-    cursor: none !important;
-  }
-}
