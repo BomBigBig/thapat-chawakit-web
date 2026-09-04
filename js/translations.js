@@ -99,6 +99,7 @@ const translations = {
     form_disclaimer: "โดยการกดส่งข้อมูล คุณยินยอมให้เราติดต่อกลับเพื่อเสนอคำปรึกษาด้านสถาปัตยกรรม",
     
     footer_copyright: "© 2026 ถาปัตเฉพาะกิจ. ออกแบบเพื่อให้ที่อยู่อาศัยเป็นหนึ่งกับชีวิต",
+    footer_cta: "เริ่มต้นออกแบบบ้านกับเรา ↗",
     
     modal_blueprint_title: "แบบแปลนสถาปัตยกรรม (Architectural Blueprint)",
     modal_materials_title: "วัสดุและนวัตกรรมการก่อสร้าง",
@@ -204,6 +205,7 @@ const translations = {
     form_disclaimer: "By submitting this form, you agree to let us contact you regarding architectural consultations.",
     
     footer_copyright: "© 2026 Thapat Chaphokit. Designed for life seamlessly integrated with nature.",
+    footer_cta: "START A PROJECT ↗",
     
     modal_blueprint_title: "Architectural Blueprint & Floor Plan",
     modal_materials_title: "Materials & Structural Engineering",
@@ -212,6 +214,29 @@ const translations = {
 };
 
 const realWorksData = [
+  {
+    id: "ajub_house",
+    image: "assets/Ajub_house/1.jpg",
+    title: { th: "Ajub's House", en: "Ajub's House" },
+    desc: { 
+      th: "บ้านเดี่ยวชั้นเดียวสไตล์ Modern Gable ที่ผสานความเรียบง่ายเข้ากับธรรมชาติ จัดวางผังแบบ Twin Gable เปิดรับคอร์ทสวนและแสงธรรมชาติ", 
+      en: "A single-story Modern Gable residence embracing nature and minimalism. Twin gable volumes frame an intimate courtyard, natural light, and serene airflow." 
+    },
+    details: {
+      th: "สถาปัตยกรรมบ้านเดี่ยวชั้นเดียวที่ออกแบบบนพื้นฐานความสงบและสัจจะของสเปซ\n\nโจทย์ของ Ajub's House คือการสร้างพื้นที่อยู่อาศัยที่โปร่ง โล่ง สบาย และเชื่อมโยงกับธรรมชาติภายนอกอย่างแนบเนียน เราจึงจัดวางมวลอาคารออกเป็น 2 แมสหลักทรงจั่ว (Twin Gable) ที่สื่อถึงความอบอุ่นแบบบ้านดั้งเดิม แต่ตัดทอนรายละเอียดให้เฉียบคมในสไตล์โมเดิร์น มินิมอล\n\nระหว่างมวลอาคารทั้งสอง ถูกเชื่อมต่อด้วยโถงกลางกระจกใสที่เปิดรับมุมมองสวนและต้นไม้ใหญ่ ชานระเบียงภายนอกเล่นระดับคอนกรีตเชื่อมต่อกับเสาไม้จริง เสริมด้วยผนังหินสีดำธรรมชาติที่สร้างความสงบและเป็นส่วนตัว ภายในคุมโทนงานไม้และแสง Warm Light ที่นุ่มนวล เพื่อให้ทุกช่วงเวลาในบ้านเป็นช่วงเวลาแห่งการพักผ่อนอย่างแท้จริง",
+      en: "A single-story residential sanctuary rooted in spatial calmness and material authenticity.\n\nFor Ajub's House, the core vision was to create a living space that breathes with openness while seamlessly intertwining with its natural landscape. We composed the architecture into two distinct gable volumes—echoing traditional residential warmth while purifying the geometry into a razor-sharp modern minimalist aesthetic.\n\nThe two volumes are bridged by a transparent central pavilion that captures lush garden views from both sides. A stepped concrete terrace with warm timber posts extends outward toward the lawn, complemented by a textured black stone feature wall that anchors visual depth and ensures privacy. The interior embraces soft wood tones and integrated cove lighting, crafting a timeless sanctuary for peaceful everyday living."
+    },
+    gallery: [
+      "assets/Ajub_house/1.jpg",
+      "assets/Ajub_house/2.jpg",
+      "assets/Ajub_house/3.jpg",
+      "assets/Ajub_house/4.jpg",
+      "assets/Ajub_house/5.jpg",
+      "assets/Ajub_house/6.jpg",
+      "assets/Ajub_house/7.jpg"
+    ],
+    specs: ["Residential Architecture", "Modern Gable Minimalist", "Thailand"]
+  },
   {
     id: "work1",
     image: "assets/BaanSapsiri_IN/รับแขก.png",
