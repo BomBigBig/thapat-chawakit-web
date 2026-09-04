@@ -49,6 +49,9 @@ const translations = {
     cta_first_client_title: "ร่วมสร้างสรรค์สถาปัตยกรรมที่เป็นเอกลักษณ์ร่วมกัน",
     cta_first_client_desc: "หากคุณกำลังมองหาทีมสถาปนิกที่พร้อมทุ่มเทเวลา หัวใจ และความพิถีพิถันให้แก่บ้านของคุณอย่างเต็มร้อย เราพร้อมเปิดผืนผ้าใบและออกแบบร่วมกับคุณตั้งแต่วันนี้",
     cta_start_project: "ส่งโจทย์เริ่มออกแบบบ้านหลังแรก ↗",
+    projects_prev: "ก่อนหน้า",
+    projects_next: "ถัดไป",
+    projects_page: "หน้า",
     
     section_process_num: "[01] — ขั้นตอนการดำเนินงาน",
     section_process_title: "ขั้นตอนการทำงานของเรา (จากความฝัน สู่บ้านจริง)",
@@ -155,6 +158,9 @@ const translations = {
     cta_first_client_title: "CO-CREATE A UNIQUE ARCHITECTURAL MASTERPIECE",
     cta_first_client_desc: "If you are looking for a team of architects ready to dedicate their time, heart, and meticulous attention to your home, we are ready to open our canvas and begin designing with you today.",
     cta_start_project: "SUBMIT YOUR BRIEF FOR OUR INAUGURAL HOME ↗",
+    projects_prev: "PREV",
+    projects_next: "NEXT",
+    projects_page: "PAGE",
     
     section_process_num: "[01] — WORK PROCESS",
     section_process_title: "OUR PROCESS (FROM DREAM TO REALITY)",

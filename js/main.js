@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeroBgSlider();
   initProcessImageSlider();
   renderProjects('all');
+  initProjectSwipe();
   renderTeam();
   initModalEvents();
   initContactForm();
@@ -177,11 +178,17 @@ function setLanguage(lang) {
 }
 
 /* --------------------------------------------------------------------------
-   PROJECT FEED & FILTERING LOGIC (Using Real Project Renders)
+   PROJECT FEED & PAGINATION LOGIC (2 Projects Per Page Showcase)
    -------------------------------------------------------------------------- */
-function renderProjects(category) {
+let currentProjectsPage = 1;
+const PROJECTS_PER_PAGE = 2;
+
+function renderProjects(category, page = currentProjectsPage) {
   activeCategory = category;
+  currentProjectsPage = page;
+  
   const container = document.getElementById('projects-container');
+  const paginationContainer = document.getElementById('projects-pagination');
   if (!container) return;
 
   const dataset = (typeof realWorksData !== 'undefined' && realWorksData.length > 0) 
@@ -192,13 +199,20 @@ function renderProjects(category) {
     ? dataset 
     : dataset.filter(p => p.category === category);
 
-  container.innerHTML = filtered.map(p => {
+  const totalPages = Math.ceil(filtered.length / PROJECTS_PER_PAGE) || 1;
+  if (currentProjectsPage > totalPages) currentProjectsPage = totalPages;
+  if (currentProjectsPage < 1) currentProjectsPage = 1;
+
+  const startIndex = (currentProjectsPage - 1) * PROJECTS_PER_PAGE;
+  const pageItems = filtered.slice(startIndex, startIndex + PROJECTS_PER_PAGE);
+
+  // Render Project Items (2 per page)
+  container.innerHTML = pageItems.map(p => {
     const title = p.title[currentLang];
     const desc = p.desc[currentLang];
-    const learnText = translations[currentLang].cta_start_project;
 
     return `
-      <article class="project-list-item reveal-on-scroll" onclick="openProjectModal('${p.id}')">
+      <article class="project-list-item reveal-on-scroll is-visible" onclick="openProjectModal('${p.id}')">
         <div class="project-list-info">
           <h3 class="project-list-title">${title}</h3>
           <div class="project-list-meta">
@@ -223,12 +237,119 @@ function renderProjects(category) {
   if (window.revealObserver) {
     container.querySelectorAll('.reveal-on-scroll').forEach(el => window.revealObserver.observe(el));
   }
+
+  // Render Minimalist Pagination Controls
+  if (paginationContainer) {
+    if (totalPages <= 1) {
+      paginationContainer.innerHTML = '';
+      paginationContainer.style.display = 'none';
+    } else {
+      paginationContainer.style.display = 'flex';
+      const t = translations[currentLang] || {};
+      const prevText = t.projects_prev || 'PREV';
+      const nextText = t.projects_next || 'NEXT';
+
+      let numbersHtml = '';
+      for (let i = 1; i <= totalPages; i++) {
+        const activeClass = i === currentProjectsPage ? 'active' : '';
+        const numStr = String(i).padStart(2, '0');
+        numbersHtml += `
+          <button class="proj-page-num ${activeClass}" aria-label="Page ${i}" onclick="changeProjectPage(${i})">
+            ${numStr}
+          </button>
+        `;
+      }
+
+      const curStr = String(currentProjectsPage).padStart(2, '0');
+      const totStr = String(totalPages).padStart(2, '0');
+
+      paginationContainer.innerHTML = `
+        <button class="proj-page-btn prev-btn" ${currentProjectsPage === 1 ? 'disabled' : ''} onclick="changeProjectPage(${currentProjectsPage - 1})" aria-label="Previous Page">
+          <span class="btn-arrow">←</span>
+          <span class="btn-label">${prevText}</span>
+        </button>
+
+        <div class="proj-page-center">
+          <div class="proj-page-numbers">
+            ${numbersHtml}
+          </div>
+        </div>
+
+        <button class="proj-page-btn next-btn" ${currentProjectsPage === totalPages ? 'disabled' : ''} onclick="changeProjectPage(${currentProjectsPage + 1})" aria-label="Next Page">
+          <span class="btn-label">${nextText}</span>
+          <span class="btn-arrow">→</span>
+        </button>
+      `;
+    }
+  }
 }
+
+// Global Page Navigation Function with smooth animation
+window.changeProjectPage = function(newPage) {
+  const container = document.getElementById('projects-container');
+  if (!container || newPage === currentProjectsPage) return;
+
+  container.classList.add('page-transitioning-out');
+
+  setTimeout(() => {
+    renderProjects(activeCategory, newPage);
+    container.classList.remove('page-transitioning-out');
+    container.classList.add('page-transitioning-in');
+
+    // Smooth scroll back to #projects header if user scrolled past
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      const rect = projectsSection.getBoundingClientRect();
+      if (rect.top < -50) {
+        projectsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    setTimeout(() => {
+      container.classList.remove('page-transitioning-in');
+    }, 350);
+  }, 200);
+};
 
 // Global Filter Helper
 window.filterProjects = function(category) {
-  renderProjects(category);
+  currentProjectsPage = 1;
+  renderProjects(category, 1);
 };
+
+// Mobile Touch Swipe Gesture Support
+function initProjectSwipe() {
+  const section = document.getElementById('projects');
+  if (!section) return;
+
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  section.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+
+  section.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  }, { passive: true });
+
+  function handleSwipe() {
+    const diff = touchStartX - touchEndX;
+    const dataset = (typeof realWorksData !== 'undefined' && realWorksData.length > 0) 
+      ? realWorksData 
+      : projectsData;
+    const totalPages = Math.ceil(dataset.length / PROJECTS_PER_PAGE) || 1;
+
+    if (diff > 50 && currentProjectsPage < totalPages) {
+      // Swiped Left -> Next Page
+      changeProjectPage(currentProjectsPage + 1);
+    } else if (diff < -50 && currentProjectsPage > 1) {
+      // Swiped Right -> Prev Page
+      changeProjectPage(currentProjectsPage - 1);
+    }
+  }
+}
 
 /* --------------------------------------------------------------------------
    ARCHITECT TEAM RENDER (Split 2-Column Layout matching User Diagram)

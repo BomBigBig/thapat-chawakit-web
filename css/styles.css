@@ -1303,6 +1303,161 @@ button {
   transform: translateX(4px);
 }
 
+/* ==========================================================================
+   PROJECTS PAGINATION & SLIDER CONTROLS
+   ========================================================================== */
+.projects-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-subtle);
+  font-family: var(--font-mono);
+  user-select: none;
+}
+
+.proj-page-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  padding: 0.65rem 1.4rem;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  letter-spacing: 0.05em;
+}
+
+.proj-page-btn:hover:not(:disabled) {
+  background-color: var(--text-main);
+  color: #fff;
+  border-color: var(--text-main);
+  transform: translateY(-1px);
+}
+
+.proj-page-btn:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+  border-color: var(--border-subtle);
+}
+
+.proj-page-btn .btn-arrow {
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+.proj-page-btn.prev-btn:hover:not(:disabled) .btn-arrow {
+  transform: translateX(-3px);
+}
+
+.proj-page-btn.next-btn:hover:not(:disabled) .btn-arrow {
+  transform: translateX(3px);
+}
+
+.proj-page-center {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.proj-page-numbers {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.proj-page-num {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.proj-page-num:hover:not(.active) {
+  border-color: var(--border-subtle);
+  color: var(--text-main);
+  background-color: var(--bg-surface);
+}
+
+.proj-page-num.active {
+  background-color: var(--text-main);
+  color: #fff;
+  font-weight: 600;
+}
+
+.proj-page-counter {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+}
+
+.proj-page-counter .counter-current {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.proj-page-counter .counter-sep {
+  margin: 0 0.2rem;
+  opacity: 0.5;
+}
+
+/* Transitions for Projects Feed */
+.projects-feed {
+  transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.projects-feed.page-transitioning-out {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.projects-feed.page-transitioning-in {
+  animation: projectPageFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes projectPageFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-pagination {
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+  .proj-page-btn {
+    padding: 0.5rem 1.1rem;
+    font-size: 0.8rem;
+  }
+  .proj-page-center {
+    order: -1;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 /* SECTION [03] - ARCHITECT COLLECTIVE */
 .section-team {
   padding: 6rem 4rem;
